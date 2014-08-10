@@ -1,0 +1,246 @@
+@keyframes searchexpand {
+  0% {
+    background-position: center;
+    width: 40px; }
+
+  99% {
+    background-position: center;
+    width: 200px; }
+
+  100% {
+    background-position: -40px -40px;
+    width: 200px; } }
+
+html,
+body {
+  background: #cedae7;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2 {
+  color: #233588;
+  font-family: inherit;
+  font-weight: 300; }
+
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 400; }
+
+a {
+  color: #ed1c24; }
+
+.container {
+  /*position: relative;*/ }
+  .container.has-button {
+    padding-bottom: 37px; }
+
+.button-container {
+  position: absolute;
+  right: 15px;
+  bottom: 0; }
+  .button-container .button {
+    background: url("../images/arrow-red-right-small.png") no-repeat scroll right center #22b0f9;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 37px;
+    margin: 0;
+    padding: 0 48px 0 13px; }
+    .button-container .button:hover {
+      background-color: #22b0f9; }
+
+header {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  header #phone-container p {
+    color: #233588;
+    font-size: 21px;
+    line-height: 1;
+    margin: 0; }
+    header #phone-container p span {
+      font-weight: bold; }
+  header #courtesy-container .menu {
+    list-style: none;
+    margin: 0; }
+    header #courtesy-container .menu .menu-item {
+      float: right;
+      font-size: 16px;
+      margin-left: 15px; }
+      header #courtesy-container .menu .menu-item a {
+        color: #233588; }
+  header #topnav-container .top-bar {
+    background: #233588;
+    height: 40px;
+    margin-top: 14px; }
+    header #topnav-container .top-bar .top-bar-section {
+      background: #233588; }
+      header #topnav-container .top-bar .top-bar-section li {
+        background: #233588; }
+        header #topnav-container .top-bar .top-bar-section li.has-form {
+          height: 40px;
+          padding-right: 0; }
+          header #topnav-container .top-bar .top-bar-section li.has-form form {
+            position: relative; }
+            header #topnav-container .top-bar .top-bar-section li.has-form form input {
+              border: 0;
+              height: 40px;
+              padding-top: 0;
+              padding-bottom: 0;
+              top: 0; }
+            header #topnav-container .top-bar .top-bar-section li.has-form form input[type="search"] {
+              background: url("../images/spyglass.png") no-repeat scroll right center white;
+              float: right;
+              width: 40px;
+              -moz-transition: all 0.5s ease-out;
+              -webkit-transition: all 0.5s ease-out;
+              transition: all 0.5s ease-out;
+              z-index: 10; }
+              header #topnav-container .top-bar .top-bar-section li.has-form form input[type="search"]:focus {
+                /*background-position: -40px -40px;*/
+                width: 220px;
+                -moz-transition: all 0.5s ease-out;
+                -webkit-transition: all 0.5s ease-out;
+                transition: all 0.5s ease-out;
+                z-index: 1; }
+            header #topnav-container .top-bar .top-bar-section li.has-form form input[type="submit"] {
+              background: url("../images/spyglass.png") no-repeat scroll center center white;
+              position: absolute;
+              right: 0;
+              font-size: 1px;
+              color: #fff;
+              cursor: pointer;
+              width: 40px;
+              z-index: 5; }
+        header #topnav-container .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
+          background: #233588;
+          color: #fff;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 40px; }
+          header #topnav-container .top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
+            background: #fff;
+            color: #e41b13; }
+
+.metaslider .flexslider {
+  position: relative; }
+  .metaslider .flexslider ul {
+    list-style: none;
+    margin: 0; }
+    .metaslider .flexslider ul.slides li img {
+      width: 100%; }
+    .metaslider .flexslider ul.slides li a {
+      background: url("../images/arrow-red-right.png") no-repeat scroll right center #22b0f9;
+      color: #fff;
+      display: block;
+      font-size: 22px;
+      font-weight: 200;
+      line-height: 55px;
+      padding: 0 75px 0 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    .metaslider .flexslider ul.slides li .caption-wrap {
+      position: absolute;
+      top: 40%;
+      left: -20px;
+      bottom: auto;
+      width: auto;
+      opacity: 1; }
+      .metaslider .flexslider ul.slides li .caption-wrap .caption {
+        background: #233588;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 200;
+        line-height: 1.2;
+        padding: 20px; }
+    .metaslider .flexslider ul.flex-direction-nav {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 99; }
+      .metaslider .flexslider ul.flex-direction-nav li {
+        float: left; }
+        .metaslider .flexslider ul.flex-direction-nav li a {
+          display: block;
+          height: 55px;
+          opacity: 1;
+          position: relative;
+          width: 47px; }
+          .metaslider .flexslider ul.flex-direction-nav li a.flex-prev {
+            background: url("../images/arrow-blue-left.png") no-repeat scroll center center transparent;
+            left: 0; }
+          .metaslider .flexslider ul.flex-direction-nav li a.flex-next {
+            background: url("../images/arrow-red-right.png") no-repeat scroll center center transparent;
+            right: 0; }
+  .metaslider .flexslider ol.flex-control-nav {
+    display: none; }
+
+.home-news p {
+  font-size: 13px;
+  font-weight: 300; }
+
+#home-testimonials-container {
+  background: url("../images/angle-bg-1.png") no-repeat scroll center top #235388;
+  background-size: contain;
+  padding-top: 90px;
+  padding-bottom: 60px; }
+  #home-testimonials-container h1 {
+    background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    min-height: 53px;
+    padding-left: 65px; }
+  #home-testimonials-container .testimonials {
+    padding-top: 25px; }
+    #home-testimonials-container .testimonials .testimonial {
+      padding-top: 22px;
+      position: relative; }
+      #home-testimonials-container .testimonials .testimonial .client-name {
+        background: #051c35;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 44px;
+        margin: 0;
+        padding: 0 12px;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      #home-testimonials-container .testimonials .testimonial .content {
+        background: #fff;
+        padding: 35px 10px 60px; }
+        #home-testimonials-container .testimonials .testimonial .content p {
+          font-size: 13px;
+          margin: 0; }
+      #home-testimonials-container .testimonials .testimonial .button-container {
+        right: 0; }
+    #home-testimonials-container .testimonials img.vacancies-bg {
+      height: 100%;
+      width: 100%; }
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  footer .menu {
+    list-style: none;
+    margin: 0; }
+    footer .menu .menu-item {
+      float: left; }
+      footer .menu .menu-item:not(:first-child) {
+        padding-left: 10px; }
+      footer .menu .menu-item a {
+        color: #233588;
+        font-size: 12px;
+        line-height: 20px; }
+
+#wpstats {
+  float: left;
+  visibility: hidden; }
