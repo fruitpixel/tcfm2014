@@ -58,12 +58,12 @@
 			<?php
 			$args = array(
 			        'posts_per_page'   => 2,
-			        'post_type'        => 'testimonial'
+			        'post_type'        => 'testimonials'
 			    );
 			$testimonial_posts = get_posts( $args );
 			?>
 
-			<div id="home-testimonials-container">
+			<div id="home-testimonials-container" class="page-angled-bg">
 
 				<div class="row">
 					<div class="small-12 large-5 columns end">

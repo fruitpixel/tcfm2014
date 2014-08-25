@@ -73,13 +73,21 @@ function pxls_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Adding extra bespoke images sizes
-	add_image_size( 'home-news-thumb', 144, 209, false );
+	add_image_size( 'home-news-thumb', 144, 209, true );
+	add_image_size( 'news-item-thumb', 298, 133, true );
+	add_image_size( 'services-item-thumb', 298, 165, true );
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
 	// add support for the html5 search form
 	add_theme_support( 'html5', array( 'search-form' ) );
+
+	// add support for infinite scroll (jetpack function)
+	add_theme_support( 'infinite-scroll', array(
+	    'container' => 'infinite-scroll',
+	    'footer' => false,
+	) );
 
 	// set the default content width 
 	if ( !isset( $content_width ) )
