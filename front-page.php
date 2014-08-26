@@ -67,7 +67,7 @@
 
 				<div class="row">
 					<div class="small-12 large-5 columns end">
-						<h1>What our clients say about our people</h1>
+						<h1 class="testimonials-title">What our clients say about our people</h1>
 					</div>
 				</div>
 

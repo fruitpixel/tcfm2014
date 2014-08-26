@@ -1,27 +1,28 @@
 <?php get_header(); ?>
 
-	<?php get_template_part( 'parts/tpl-nav', 'single' ); ?>
+	<?php get_template_part( 'parts/tpl-nav', 'single-services' ); ?>
 
 	<div id="content" class="container">	
 		
-		<?php get_template_part( 'parts/tpl-before-all-content', 'single' ); ?>			
+		<?php get_template_part( 'parts/tpl-before-all-content', 'single-services' ); ?>			
 		
 		<div class="container">			
 			<div class="row">
 			
 				<div class="small-12 columns">
 				
-					<?php get_template_part( 'parts/tpl-before-content', 'single' ); ?>
+					<?php get_template_part( 'parts/tpl-before-content', 'single-services' ); ?>
 					
 					<?php if ( have_posts() ) : ?>
 						<?php while( have_posts() ) : the_post(); ?>
 							<div id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?> data-equalizer>
 								<div class="small-12 medium-8 columns" data-equalizer-watch>
-									<h1 class="post-title"><?php the_title(); ?></h1>
-									<?php the_content(); ?>
+									<div class="post-content">
+										<?php the_content(); ?>
+									</div>										
 								</div>
 								<div class="small-12 medium-4 columns">
-									<?php get_template_part( 'parts/tpl-sidebar-right', 'single' ); ?>
+									<?php get_template_part( 'parts/tpl-sidebar-right', 'single-services' ); ?>
 								</div>
 							</div>
 						<?php endwhile; ?>
@@ -34,9 +35,10 @@
 						</div>
 					<?php endif; ?>
 					
-					<?php get_template_part( 'parts/tpl-after-content', 'single' ); ?>
+					<?php get_template_part( 'parts/tpl-after-content', 'single-services' ); ?>
 					
 				</div>
+				
 			</div>
 
 			<div class="page-angled-bg">
@@ -45,19 +47,18 @@
 					
 						<div class="row">
 							<div class="small-12 medium-8 columns end">
-								<div class="share-article-container">
-									<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/icon-share.png" alt="Share Article">
-									
+								<div class="more-info-container">
+									<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/icon-info.png" alt="Information">
+									<?php echo do_shortcode( '[gravityform id="1" name="Want more information?" ajax="true"]' ); ?>
 								</div>									
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 		
-		<?php get_template_part( 'parts/tpl-after-all-content', 'single' ); ?>
+		<?php get_template_part( 'parts/tpl-after-all-content', 'single-services' ); ?>
 	
 	</div>
 

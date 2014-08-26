@@ -37,15 +37,28 @@ h2 {
 
 h1 {
 	font-size: 28px;
+	.single-post & {
+		margin-top: 20px;
+	}
+	.sidebar-item & {
+		margin-top: 5px;
+	}
 }
 h2 {
 	font-size: 18px;
 	font-weight: 400;
 }
+h3 {
+
+}
 
 
 a {
 	color: #ed1c24;
+}
+
+img {
+
 }
 
 .container {
@@ -62,18 +75,19 @@ a {
 	position: absolute;
 	right: 15px;
 	bottom: 0;
-	.button {
-		background: url("../images/arrow-red-right-small.png") no-repeat scroll right center $tcfm-color-mediumblue;
-		color: #fff;
-		display: block;
-		font-size: 16px;
-		font-weight: 200;
-		line-height: 37px;
-		margin: 0;
-		padding: 0 48px 0 13px;		
-		&:hover {
-			background-color: $tcfm-color-mediumblue;
-		}
+	
+}
+
+.button {
+	background: url("../images/arrow-red-right-small.png") no-repeat scroll right center $tcfm-color-mediumblue;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 37px;
+	margin: 0;
+	padding: 0 48px 0 13px;		
+	&:hover {
+		background-color: $tcfm-color-mediumblue;
 	}
 }
 
@@ -179,7 +193,11 @@ header {
 
 
 .metaslider {
+	.home & {
+		margin-bottom: 20px;
+	}
 	.flexslider {
+		margin: 0 !important;
 		position: relative;
 		ul {
 			list-style: none;
@@ -242,6 +260,11 @@ header {
 						}
 					}
 				}
+				.single-services &,
+				.single-post & {
+					left: auto;
+					right: 0;
+				}
 			}
 		}
 		ol {
@@ -263,44 +286,9 @@ header {
 
 #home-testimonials-container {
 	
-	h1 {
-		background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
-		color: #fff;
-		font-size: 26px;
-		font-weight: 300;
-		line-height: 1;
-		min-height: 53px;
-		padding-left: 65px;
-	}
+
 	.testimonials {
-		padding-top: 25px;
-		.testimonial {
-			padding-top: 22px;
-			position: relative;
-			.client-name {
-				background: #051c35;
-				color: #fff;
-				font-size: 18px;
-				font-weight: 300;
-				line-height: 44px;
-				margin: 0;
-				padding: 0 12px;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-			.content {
-				background: #fff;
-				padding: 35px 10px 60px;
-				p {
-					font-size: 13px;
-					margin: 0;
-				}
-			}
-			.button-container {
-				right: 0;
-			}
-		}
+		padding-top: 25px;		
 		img {
 			&.vacancies-bg {
 				height: 100%;
@@ -310,6 +298,176 @@ header {
 	}
 		
 }
+
+.testimonial {
+	padding-top: 22px;
+	position: relative;
+	.client-name {
+		background: #051c35;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 44px;
+		margin: 0;
+		padding: 0 12px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.content {
+		background: #fff;
+		padding: 35px 10px 60px;
+		p {
+			font-size: 13px;
+			margin: 0;
+		}
+	}
+	.button-container {
+		right: 0;
+	}
+
+}
+
+.testimonials-title {
+	background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 1;
+	min-height: 53px;
+	padding-left: 65px;
+	.single-services & {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+}
+
+.news-title {
+	background: url("../images/news-icon.png") no-repeat scroll left center transparent;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 38px;
+	margin-bottom: 20px;
+	min-height: 38px;
+	padding-left: 65px;
+}
+.news {
+	margin-bottom: 20px;
+	.title {
+		color: #22b0f9;
+		font-size: 18px;
+	}
+	.content {
+		color: #e5e5e5;
+		p {
+			font-size: 13px;
+		}
+	}
+}
+
+
+.twitter-title {
+	background: url("../images/icon-twitter.png") no-repeat scroll left center transparent;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 38px;
+	margin-bottom: 20px;
+	min-height: 38px;
+	padding-left: 55px;
+}
+.twitter-updates {
+	list-style: none;
+	margin: 0;
+}
+.tweetli {
+	margin-bottom: 15px;
+	p {
+		color: #e5e5e5;
+		font-size: 13px;
+		font-weight: 300;
+		margin: 0;
+	}
+	a {
+		color: #22b0f9;
+	}
+	.intent {
+		display: none;
+	}
+	.timeline {
+		font-size: 13px;
+		font-weight: 300;
+	}
+}
+
+.post-content {
+	padding-top: 20px;
+}
+
+.sidebar-outercontainer {
+	position: relative;
+}
+.sidebar-container {
+	background: -moz-linear-gradient(6deg, transparent 35px , #235388 34px);
+    background: -o-linear-gradient(6deg, transparent 35px , #235388 34px);
+    background: -webkit-linear-gradient(6deg, transparent 35px , #235388 34px);
+    background: linear-gradient(6deg, transparent 35px , #235388 34px);
+    position: absolute; 
+    padding: 0 0 300px;
+    .single-post & {
+    	padding-bottom: 200px;
+    }
+}
+	.sidebar-content {
+		padding: 0;
+	}
+
+	.sidebar-item {
+		padding: 20px 15px;
+	}
+
+
+.sidebar-skewed-outercontainer {
+	position: relative;
+}
+.sidebar-skewed-container {
+	width: 100%;
+	-webkit-transform: skewY(6deg);
+	   -moz-transform: skewY(6deg);
+	     -o-transform: skewY(6deg);
+	transform: skewY(6deg);
+	background: #235388;
+	position: absolute;
+	top: -16px;
+	.sidebar-skewed-content {
+		-webkit-transform: skewY(-6deg);
+		-moz-transform: skewY(-6deg);
+		-o-transform: skewY(-6deg);
+		transform: skewY(-6deg);
+		background: transparent;
+	}
+}
+
+
+.more-info-container {
+	margin-top: -100px;
+	.gform_wrapper {
+		h3 {
+			&.gform_title {
+				color: #233588;
+				font-size: 22px;
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+
+.share-article-container {
+	margin-top: -100px;
+}
+		
 
 
 footer {
@@ -330,13 +488,63 @@ footer {
 			}
 		}
 	}
+
+	.single-services &,
+	.single-post & {
+		background: #e5e5e5;
+	}
 }
 
 .page-angled-bg {
 	background: url("../images/angle-bg-1.png") no-repeat scroll center top #235388;
 	background-size: contain;
+	background: -moz-linear-gradient(186deg, transparent 135px, #235388 134px);
+    background: -o-linear-gradient(186deg, transparent 135px, #235388 134px);
+    background: -webkit-linear-gradient(186deg, transparent 135px, #235388 134px);
+    background: linear-gradient(186deg, transparent 135px, #235388 134px);
+
 	padding-top: 90px;
 	padding-bottom: 60px;
+
+	.single-services &,
+	.single-post & {
+		background: url("../images/angle-bg-2.png") no-repeat scroll center top #e5e5e5;
+		background-size: contain;
+		background: -moz-linear-gradient(186deg, transparent 135px, #e5e5e5 134px);
+	    background: -o-linear-gradient(186deg, transparent 135px, #e5e5e5 134px);
+	    background: -webkit-linear-gradient(186deg, transparent 135px, #e5e5e5 134px);
+	    background: linear-gradient(186deg, transparent 135px, #e5e5e5 134px);
+	    min-height: 300px;
+	    padding-bottom: 0;
+	}
+}
+
+.breadcrumbs {
+	background-color: transparent;
+	border: 0;
+	margin-bottom: 25px;
+	padding: 0;
+	li {
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 1;
+		text-transform: none;
+		a {
+			color: #22b0f9;
+		}
+		&.current {
+			color: #233588;
+			&:before {
+				color: #233588;
+			}
+		}
+	}	
+}
+
+.post-thumbnail {
+	img {
+		width: 100%;
+	}
 }
 
 

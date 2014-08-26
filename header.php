@@ -33,7 +33,7 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="small-12 large-2 columns">
+					<div class="small-12 medium-2 columns">
 						<div id="logo">
 	                        <?php if ( pxls_get_company_logo() ) : ?>
 								<a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo pxls_get_company_logo(); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
@@ -42,14 +42,14 @@
 	                        <?php endif; ?>
 						</div>
 					</div>
-					<div class="small-12 large-10 columns">
+					<div class="small-12 medium-10 columns">
 						<div class="row hide-for-small">
-							<div class="small-12 large-6 columns">
+							<div class="small-12 medium-6 columns">
 								<div id="phone-container">
 									 <p>Call us on <span><?php echo pxls_get_company_telephone(); ?></span></p>
 								</div>
 							</div>
-							<div class="small-12 large-6 columns">
+							<div class="small-12 medium-6 columns">
 								<div id="courtesy-container">
 									 <?php if ( has_nav_menu('courtesy-menu') ) { wp_nav_menu( array('theme_location' => 'courtesy-menu' ) ); } ?>
 								</div>

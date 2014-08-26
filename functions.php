@@ -1,5 +1,8 @@
 <?php
  
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
+
 // bootstrap the framework
 require_once( 'framework/pxls.php' );
 new PXLS();
@@ -158,17 +161,26 @@ add_action( 'wp_enqueue_scripts', 'pxls_enqueue_js' );
 
 
 
-function metaslider_append_pinit_button($html, $slide, $settings) {
+function metaslider_htmloutput($html, $slide, $settings) {
 
 	$html = "<img src='" . $slide['src'] . "' height='" . $slide['height'] . "' width='" . $slide['width'] . "' alt='" . $slide['alt'] . "' class='" . $slide['class'] . "' draggable='false'>";
-	$html .= "<a href='" . $slide['url'] . "' target='" . $slide['target'] . "'>" . $slide['title'] . "</a>";
-	$html .= "<div class='caption-wrap'>";
-		$html .= "<div class='caption'>" . $slide['caption'] . "</div>";
-	$html .= "</div>";
+	if ( $slide['url'] ) {
+		if ( $slide['title'] ) {
+			$html .= "<a href='" . $slide['url'] . "' target='" . $slide['target'] . "'>" . $slide['title'] . "</a>";
+		}
+		else{
+			$html .= "<a href='" . $slide['url'] . "' target='" . $slide['target'] . "'>Read more</a>";
+		}
+	}
+	if ( $slide['caption'] ) {
+		$html .= "<div class='caption-wrap'>";
+			$html .= "<div class='caption'>" . $slide['caption'] . "</div>";
+		$html .= "</div>";
+	}
 
     return $html;
 }
-add_filter('metaslider_image_flex_slider_markup', 'metaslider_append_pinit_button', 10, 3);
+add_filter('metaslider_image_flex_slider_markup', 'metaslider_htmloutput', 10, 3);
 
 
 
