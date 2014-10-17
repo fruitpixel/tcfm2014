@@ -8,7 +8,7 @@
 		else {
 			if ( has_post_thumbnail() ) {
 				echo '<div class="post-thumbnail">';
-				the_post_thumbnail( 'full' );
+				the_post_thumbnail( 'banner-image' );
 				echo '</div>';
 			}
 		}

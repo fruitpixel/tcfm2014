@@ -19,6 +19,8 @@
 								<div class="small-12 medium-8 columns" data-equalizer-watch>
 									<h1 class="post-title"><?php the_title(); ?></h1>
 									<?php the_content(); ?>
+
+									
 								</div>
 								<div class="small-12 medium-4 columns">
 									<?php get_template_part( 'parts/tpl-sidebar-right', 'single' ); ?>
@@ -47,6 +49,11 @@
 							<div class="small-12 medium-8 columns end">
 								<div class="share-article-container">
 									<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/icon-share.png" alt="Share Article">
+
+									<h1>Share this article</h1>
+
+									<!-- Go to www.addthis.com/dashboard to customize your tools -->
+									<div class="addthis_sharing_toolbox"></div>
 									
 								</div>									
 							</div>

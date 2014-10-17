@@ -9,7 +9,7 @@
 		
 		<div class="container">			
 			<div class="row" data-equalizer>					
-				<div class="small-12 large-7 columns" data-equalizer-watch>
+				<div class="small-12 medium-8 columns" data-equalizer-watch>
 					<div class="container has-button">
 						<?php if ( have_posts() ) : ?>
 							<?php while ( have_posts() ) : the_post(); ?>
@@ -21,7 +21,7 @@
 						</div>		
 					</div>
 				</div>
-				<div class="small-12 large-5 columns" data-equalizer-watch>
+				<div class="small-12 medium-4 columns" data-equalizer-watch>
 					<div class="container has-button home-news">
 						<?php 
 						$args = array( 'posts_per_page' => 1 );
@@ -31,16 +31,12 @@
 						?>
 
 								<div class="row">
-									<div class="small-12 large-7 columns">
+									<div class="small-12 columns">
+										<?php if ( has_post_thumbnail() ) :
+											the_post_thumbnail( 'news-item-thumb' );
+										endif; ?>
 										<h2><?php the_title(); ?></h2>
 										<?php echo pxls_excerpt(); ?>
-									</div>
-									<div class="small-12 large-5 columns">
-										<?php
-										if ( has_post_thumbnail() ) {
-											the_post_thumbnail( 'home-news-thumb' );
-										}
-										?>
 									</div>
 								</div>
 
@@ -58,7 +54,7 @@
 			<?php
 			$args = array(
 			        'posts_per_page'   => 2,
-			        'post_type'        => 'testimonials'
+			        'post_type'        => 'testimonials_cpt'
 			    );
 			$testimonial_posts = get_posts( $args );
 			?>
@@ -66,8 +62,8 @@
 			<div id="home-testimonials-container" class="page-angled-bg">
 
 				<div class="row">
-					<div class="small-12 large-5 columns end">
-						<h1 class="testimonials-title">What our clients say about our people</h1>
+					<div class="small-12 medium-5 large-4 columns end">
+						<h1 class="testimonials-title">About our people</h1>
 					</div>
 				</div>
 
@@ -88,9 +84,11 @@
 						</div>
 
 						<div class="small-12 large-4 columns" data-equalizer-watch>
-							<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/tcfm-people.jpg" alt="TCFM People" class="vacancies-bg">
-							<div class="button-container">								
-								<a href="<?php echo home_url('/'); ?>recruitment/" class="button home-button">See the latest vacancies</a>
+							<div class="latest-vacancies">
+								<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/tcfm-people.jpg" alt="TCFM People" class="vacancies-bg">
+								<div class="button-container">								
+									<a href="<?php echo home_url('/'); ?>recruitment/" class="button home-button">See the latest vacancies</a>
+								</div>
 							</div>
 						</div>
 

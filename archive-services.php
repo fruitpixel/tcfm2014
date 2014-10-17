@@ -12,9 +12,13 @@
 				
 				<div class="small-12 columns">
 
-					<h1><?php post_type_archive_title(); ?></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet risus gravida, iaculis enim at, sodales lorem. Praesent tempus diam eu ipsum fringilla cursus. Phasellus nulla urna, iaculis vitae volutpat eget, facilisis sit amet dolor. Nam fringilla id metus eu ultricies. Aenean in nisi dapibus, purus non, commodo.</p>
-				
+					<?php $servicespage = get_page_by_path( 'services' ); ?>
+					<?php //var_dump($servicespage);?>
+					<?php if ( $servicespage ) : ?>
+						<h1><?php echo $servicespage->post_title; ?></h1>
+						<?php echo apply_filters( 'the_content', $servicespage->post_content ); ?>
+					<?php endif; ?>
+
 					<?php get_template_part( 'parts/tpl-before-content', 'archive-services' ); ?>
 					
 					<?php if ( have_posts() ) : ?>
@@ -34,17 +38,28 @@
 										</article>
 									</div>
 								<?php endwhile; ?>
-								<?php global $wp_query;
-								$big = 999999999; // need an unlikely integer
-								echo paginate_links( array(
-									'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-									'format' => '?paged=%#%',
-									'current' => max( 1, get_query_var('paged') ),
-									'total' => $wp_query->max_num_pages
-								) );
-								?>
 							</div>
-						</div>							
+						</div>	
+						<div class="row">
+							<div class="small-12 columns">
+								<div class="paginate-outer-container">
+									<div class="paginate-inner-container">
+										<?php global $wp_query;
+										$big = 999999999; // need an unlikely integer
+										echo paginate_links( array(
+											'base'		=> str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+											'format' 	=> '?paged=%#%',
+											'current' 	=> max( 1, get_query_var('paged') ),
+											'prev_text' => __('prev'),
+											'next_text' => __('next'),
+											'total' 	=> $wp_query->max_num_pages,
+											'type'		=> 'list'
+										) );
+										?>
+									</div>
+								</div>									
+							</div>
+						</div>						
 					<?php else : ?>
 						<div class="row">
 							<div class="small-12 columns">

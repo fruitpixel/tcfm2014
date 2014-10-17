@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'page' ); ?>
 
 	<?php get_template_part( 'parts/tpl-nav', 'page' ); ?>
 
@@ -6,18 +6,39 @@
 		
 		<?php get_template_part( 'parts/tpl-before-all-content', 'page' ); ?>			
 		
-		<div id="middle" class="container">			
+		<div class="container">			
 			<div class="row">
 			
-				<div id="column-2" class="<?php pxls_contentcolumn_width_classes(); ?>">
+				<div class="small-12 columns">
 				
 					<?php get_template_part( 'parts/tpl-before-content', 'page' ); ?>
 					
 					<?php if ( have_posts() ) : ?>
-						<?php while(have_posts()) : the_post(); ?>
-							<div id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?>>
-								<div class="small-12 columns">
-									<?php the_content(); ?>
+						<?php while( have_posts() ) : the_post(); ?>
+							<?php
+							$show_featured_image = pods_field( 'page', get_the_ID(), 'show_featured_image' );
+							$bannerimg = pods_field( 'page', get_the_ID(), 'featured_image_banner' );							
+							?>
+
+							<div id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?> data-equalizer>
+								<div class="small-12 medium-8 columns" data-equalizer-watch>
+									<?php if ( $show_featured_image && $show_featured_image[0] === "1" ) : ?>
+										<div class="page-banner <?php if ( $bannerimg && $bannerimg[0] !== "1"  && has_post_thumbnail() ) echo 'has-post-thumbnail'; ?>">
+											<?php if ( $bannerimg && $bannerimg[0] !== "1"  && has_post_thumbnail() ) :
+												the_post_thumbnail( 'page-banner' );
+											endif; ?>
+											<h1><?php the_title(); ?></h1>
+										</div>
+									<?php else : ?>
+										<h1><?php the_title(); ?></h1>
+									<?php endif; ?>
+									<div class="post-content">
+
+										<?php the_content(); ?>
+									</div>										
+								</div>
+								<div class="small-12 medium-4 columns">
+									<?php get_template_part( 'parts/tpl-sidebar-right', 'page' ); ?>
 								</div>
 							</div>
 						<?php endwhile; ?>
@@ -34,15 +55,12 @@
 					
 				</div>
 				
-				<?php get_template_part( 'parts/tpl-sidebar-left', 'page' ); ?>
-
-				<?php get_template_part( 'parts/tpl-sidebar-right', 'page' ); ?>
-
 			</div>
+
 		</div>
 		
 		<?php get_template_part( 'parts/tpl-after-all-content', 'page' ); ?>
 	
 	</div>
 
-<?php get_footer();
+<?php get_footer( 'page' );

@@ -6,10 +6,10 @@
 		
 		<?php get_template_part( 'parts/tpl-before-all-content', 'archive' ); ?>			
 		
-		<div id="middle" class="container">			
+		<div class="container">			
 			<div class="row">			
 				
-				<div id="column-2" class="<?php pxls_contentcolumn_width_classes(); ?>">
+				<div class="small-12 columns">
 				
 					<?php get_template_part( 'parts/tpl-before-content', 'archive' ); ?>
 					
@@ -44,10 +44,6 @@
 					<?php get_template_part( 'parts/tpl-after-content', 'archive' ); ?>
 					
 				</div>
-				
-				<?php get_template_part( 'parts/tpl-sidebar-left', 'archive' ); ?>
-
-				<?php get_template_part( 'parts/tpl-sidebar-right', 'archive' ); ?>
 
 			</div>
 		</div>

@@ -3,6 +3,21 @@
 
 		<div class="container">
 			<footer>
+				<div class="page-angled-bg">
+					<div class="row">
+						<div class="small-12 columns">
+						
+							<div class="row">
+								<div class="small-12 medium-8 columns end">
+									<div class="more-info-container">
+										<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/icon-info.png" alt="Information">
+										<?php echo do_shortcode( '[gravityform id="1" name="Want more information?" ajax="true"]' ); ?>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="small-6 columns">
 						<div class="footer-menu-container clearfix">
@@ -27,6 +42,7 @@
 
 	<script type="text/javascript" src="http://nyc14ny.com/js/27436.js" ></script>
 	<noscript><img src="http://nyc14ny.com/images/track/27436.png?trk_user=27436&trk_tit=jsdisabled&trk_ref=jsdisabled&trk_loc=jsdisabled" height="0px" width="0px" style="display:none;" /></noscript>
+
 
 
 	<?php wp_footer(); ?>

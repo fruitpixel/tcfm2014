@@ -286,18 +286,7 @@ function pxls_get_company_telephone() {
 }
 
 
-function pxls_get_company_facebook() {
-	global $PXLS_Options;
-	$companyfacebook = $PXLS_Options->get( 'pxls_company_facebook' );
-    return $companyfacebook;
-}
 
-
-function pxls_get_company_linkedin() {
-	global $PXLS_Options;
-	$companylinkedin = $PXLS_Options->get( 'pxls_company_linkedin' );
-    return $companylinkedin;
-}
 
 
 function pxls_get_theme_colorscheme_folder_uri() {

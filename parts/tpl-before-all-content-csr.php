@@ -2,7 +2,7 @@
 <div class="row">
 	<div class="small-12 columns">
 		<nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
-		    <li role="menuitem"><a href="/services/">Services</a></li>
+		    <li role="menuitem"><a href="/about-us/">About us</a></li>
 		    <?php if ( have_posts() ) : ?>
 				<?php while( have_posts() ) : the_post(); ?>
 		    		<li role="menuitem" class="current"><?php the_title(); ?></li>
@@ -22,7 +22,7 @@
 		else {
 			if ( has_post_thumbnail() ) {
 				echo '<div class="post-thumbnail">';
-				the_post_thumbnail( 'full' );
+				the_post_thumbnail( 'banner-image' );
 				echo '</div>';
 			}
 		}

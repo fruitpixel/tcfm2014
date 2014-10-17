@@ -12,7 +12,7 @@ function pxls_theme_settings( $sections ) {
 				'id' => 'pxls_company_phone', //must be unique
 				'type' => 'text', //the field type
 				'title' => __('Company Phone Number', 'pxls-opts'),
-				'sub_desc' => __("Will show at the top and bottom of the screen", 'pxls-opts'),
+				'sub_desc' => __("", 'pxls-opts'),
 				'desc' => __('', 'pxls-opts'),
 				'std' => __('', 'pxls-opts')
 			),
@@ -20,7 +20,39 @@ function pxls_theme_settings( $sections ) {
 				'id' => 'pxls_company_email', //must be unique
 				'type' => 'text', //the field type
 				'title' => __('Company Email Address', 'pxls-opts'),
-				'sub_desc' => __("Will show at the bottom of the screen", 'pxls-opts'),
+				'sub_desc' => __("", 'pxls-opts'),
+				'desc' => __('', 'pxls-opts'),
+				'std' => __('', 'pxls-opts')
+			),
+			array(
+				'id' => 'pxls_company_twitter', //must be unique
+				'type' => 'text', //the field type
+				'title' => __('Company Twitter Link', 'pxls-opts'),
+				'sub_desc' => __("", 'pxls-opts'),
+				'desc' => __('', 'pxls-opts'),
+				'std' => __('', 'pxls-opts')
+			),
+			array(
+				'id' => 'pxls_company_linkedin', //must be unique
+				'type' => 'text', //the field type
+				'title' => __('Company LinkedIn Link', 'pxls-opts'),
+				'sub_desc' => __("", 'pxls-opts'),
+				'desc' => __('', 'pxls-opts'),
+				'std' => __('', 'pxls-opts')
+			),
+			array(
+				'id' => 'pxls_company_facebook', //must be unique
+				'type' => 'text', //the field type
+				'title' => __('Company Facebook Link', 'pxls-opts'),
+				'sub_desc' => __("", 'pxls-opts'),
+				'desc' => __('', 'pxls-opts'),
+				'std' => __('', 'pxls-opts')
+			),
+			array(
+				'id' => 'pxls_company_youtube', //must be unique
+				'type' => 'text', //the field type
+				'title' => __('Company YouTube Link', 'pxls-opts'),
+				'sub_desc' => __("", 'pxls-opts'),
 				'desc' => __('', 'pxls-opts'),
 				'std' => __('', 'pxls-opts')
 			),
@@ -28,7 +60,7 @@ function pxls_theme_settings( $sections ) {
 				'id' => 'pxls_company_logo', //must be unique
 				'type' => 'upload', //the field type
 				'title' => __('Company Logo', 'pxls-opts'),
-				'sub_desc' => __("Upload your image.<br/>(TIP - Don't remove the 'link' field!)", 'pxls-opts'),
+				'sub_desc' => __("Upload your image, and click to insert into post.<br/>(TIP - Don't remove the 'link' field!)", 'pxls-opts'),
 				'desc' => __('', 'pxls-opts')
 			)
 		)
@@ -61,37 +93,6 @@ function pxls_theme_settings( $sections ) {
 	);
 
 
-	$sections[] = array(
-		'icon' => PXLS_OPTIONS_URL.'img/glyphicons/glyphicons_092_tint.png',
-		'title' => __('Scheme', 'pxls-opts'),
-		'desc' => __('', 'pxls-opts'),
-		'fields' => array(
-			array(
-				'id' => 'background_color', //must be unique
-				'type' => 'select', //the field type
-				'title' => __('Background', 'pxls-opts'),
-				'sub_desc' => __("Select the background image to use", 'pxls-opts'),
-				'desc' => __('', 'pxls-opts'),
-				'options' => array(
-					'' => __('None', 'pxls-opts'),
-					'energise' => __('Energise', 'pxls-opts'), 
-					'bark' => __('Bark', 'pxls-opts'),
-					'deep-sea' => __('Deep Sea', 'pxls-opts'),
-					'earth' => __('Earth', 'pxls-opts'),
-					'eggshell' => __('Eggshell', 'pxls-opts'),
-					'fawn' => __('Fawn', 'pxls-opts'),
-					'fern' => __('Fern', 'pxls-opts'),
-					'limestone' => __('Limestone', 'pxls-opts'),
-					'mushroom' => __('Mushroom', 'pxls-opts'),
-					'olive' => __('Olive', 'pxls-opts'),
-					'sand' => __('Sand', 'pxls-opts'),
-					'sedona' => __('Sedona', 'pxls-opts'),
-					'stormy-sky' => __('Stormy Sky', 'pxls-opts')
-					),
-				'std' => '0'
-			)
-		)
-	);
 
 return $sections;
 

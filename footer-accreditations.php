@@ -3,6 +3,16 @@
 
 		<div class="container">
 			<footer>
+				<div id="contact" class="page-angled-bg">
+					<div class="row">
+						<div class="small-12 large-5 columns end">
+							<div class="contact-link-container">
+								<a href="<?php echo get_permalink_by_slug( 'contact-us', 'page' ); ?>">Get in touch with us</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="small-6 columns">
 						<div class="footer-menu-container clearfix">
@@ -27,6 +37,7 @@
 
 	<script type="text/javascript" src="http://nyc14ny.com/js/27436.js" ></script>
 	<noscript><img src="http://nyc14ny.com/images/track/27436.png?trk_user=27436&trk_tit=jsdisabled&trk_ref=jsdisabled&trk_loc=jsdisabled" height="0px" width="0px" style="display:none;" /></noscript>
+
 
 
 	<?php wp_footer(); ?>

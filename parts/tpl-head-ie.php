@@ -11,7 +11,7 @@
 
 <!-- IE specific styles, fix for HTML5 Tags & media queries -->
 <!--[if lt IE 9]>		
-	<link rel="stylesheet" href="<?php echo WP_THEME_URL ?>/stylesheets/ie.css" />
+	<link rel="stylesheet" href="<?php echo trailingslashit( PXLS_URI ) ?>css/ie.css" />
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="<?php echo trailingslashit( PXLS_URI ) ?>javascripts/response.min.js"></script>
 <![endif]-->

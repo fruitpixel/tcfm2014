@@ -1,27 +1,28 @@
-<?php get_header(); ?>
+<?php get_header( 'search' ); ?>
 
-	<?php get_template_part( 'parts/tpl-nav', 'blog' ); ?>
+	<?php get_template_part( 'parts/tpl-nav', 'search' ); ?>
 
 	<div id="content" class="container">	
 		
-		<?php get_template_part( 'parts/tpl-before-all-content', 'blog' ); ?>	
-
+		<?php get_template_part( 'parts/tpl-before-all-content', 'search' ); ?>			
 		
 		<div class="container">			
-			<div class="row">			
-				
+			<div class="row">
+			
 				<div class="small-12 columns">
 
-					<h1>News from TCFM</h1>	
+					<h1>Search Results</h1>	
 				
-					<?php get_template_part( 'parts/tpl-before-content', 'blog' ); ?>
+					<?php get_template_part( 'parts/tpl-before-content', 'search' ); ?>
 					
 					<?php if ( have_posts() ) : ?>
-						<div class="row" data-equalizer>
+
+						<div class="row" data-equalizer>							
+
 							<?php while(have_posts()) : the_post(); ?>
-								<div class="small-12 medium-6 large-4 columns end">
+
+								<div class="small-12 columns">
 									<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-										<?php the_post_thumbnail( 'news-item-thumb' ); ?>
 										<div class="content" data-equalizer-watch>
 											<h2><?php the_title(); ?></h2>
 											<!-- <p class="small-date">Published on: <?php the_time( get_option( 'date_format' ) ); ?></p> -->
@@ -29,12 +30,14 @@
 											<div class="button-container">								
 												<a href="<?php the_permalink(); ?>" class="button home-button">Read more</a>
 											</div>
-										</div>
-											
+										</div>									
 									</article>
 								</div>
+
 							<?php endwhile; ?>
+							
 						</div>
+
 						<div class="row">
 							<div class="small-12 columns">
 								<div class="paginate-outer-container">
@@ -56,15 +59,12 @@
 							</div>
 						</div>
 					<?php else : ?>
-						<div class="row">
-							<div class="small-12 columns">
-								<h2>Not Found</h2>
-								<p>We couldn't find what you were looking for...sorry!</p>
-							</div>
-						</div>
+						<article>
+							<p>The search produced no results!</p>
+						</article>
 					<?php endif; ?>
 
-					<?php get_template_part( 'parts/tpl-after-content', 'blog' ); ?>
+					<?php get_template_part( 'parts/tpl-after-content', 'search' ); ?>
 					
 				</div>
 
@@ -83,8 +83,8 @@
 
 		</div>
 		
-		<?php get_template_part( 'parts/tpl-after-all-content', 'blog' ); ?>
+		<?php get_template_part( 'parts/tpl-after-all-content', 'search' ); ?>
 	
 	</div>
 
-<?php get_footer();
+<?php get_footer( 'search' );

@@ -1,28 +1,29 @@
 <?php get_header(); ?>
 
-	<?php get_template_part( 'parts/tpl-nav', 'single-services' ); ?>
+	<?php get_template_part( 'parts/tpl-nav', 'casestudy' ); ?>
 
 	<div id="content" class="container">	
 		
-		<?php get_template_part( 'parts/tpl-before-all-content', 'single-services' ); ?>			
+		<?php get_template_part( 'parts/tpl-before-all-content', 'casestudy' ); ?>			
 		
 		<div class="container">			
 			<div class="row">
 			
 				<div class="small-12 columns">
 				
-					<?php get_template_part( 'parts/tpl-before-content', 'single-services' ); ?>
+					<?php get_template_part( 'parts/tpl-before-content', 'casestudy' ); ?>
 					
 					<?php if ( have_posts() ) : ?>
 						<?php while( have_posts() ) : the_post(); ?>
 							<div id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?> data-equalizer>
 								<div class="small-12 medium-8 columns" data-equalizer-watch>
 									<div class="post-content">
+										<h1 class="post-title"><?php the_title(); ?></h1>
 										<?php the_content(); ?>
 									</div>										
 								</div>
 								<div class="small-12 medium-4 columns">
-									<?php get_template_part( 'parts/tpl-sidebar-right', 'single-services' ); ?>
+									<?php get_template_part( 'parts/tpl-sidebar-right', 'casestudy' ); ?>
 								</div>
 							</div>
 						<?php endwhile; ?>
@@ -35,7 +36,7 @@
 						</div>
 					<?php endif; ?>
 					
-					<?php get_template_part( 'parts/tpl-after-content', 'single-services' ); ?>
+					<?php get_template_part( 'parts/tpl-after-content', 'casestudy' ); ?>
 					
 				</div>
 				
@@ -58,7 +59,7 @@
 			</div>
 		</div>
 		
-		<?php get_template_part( 'parts/tpl-after-all-content', 'single-services' ); ?>
+		<?php get_template_part( 'parts/tpl-after-all-content', 'casestudy' ); ?>
 	
 	</div>
 

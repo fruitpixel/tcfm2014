@@ -20,6 +20,8 @@
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	
 	<script src="<?php echo trailingslashit( PXLS_URI ) ?>js/vendor/modernizr.js"></script>
+
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 	
 	<?php wp_head(); ?>
     
@@ -33,23 +35,44 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="small-12 medium-2 columns">
-						<div id="logo">
-	                        <?php if ( pxls_get_company_logo() ) : ?>
-								<a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo pxls_get_company_logo(); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
-	                        <?php else : ?>
-	                        	<span id="header-logo-type"><a href="<?php echo home_url('/'); ?>"><?php bloginfo( 'name' ); ?></a></span>
-	                        <?php endif; ?>
+					<div class="small-12 large-2 columns">
+						<div class="row show-for-medium-only">
+							<div class="medium-2 columns">
+								<div id="logo">
+			                        <a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
+								</div>
+							</div>
+							<div class="medium-10 columns">
+								<div class="row hide-for-small">
+									<div class="small-12 medium-7 columns">
+										<div id="phone-container">
+											 <p>Call us on <span><?php echo pxls_get_company_telephone(); ?></span></p>
+										</div>
+									</div>
+									<div class="small-12 medium-5 columns">
+										<div id="courtesy-container">
+											 <?php if ( has_nav_menu('courtesy-menu') ) { wp_nav_menu( array('theme_location' => 'courtesy-menu' ) ); } ?>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row hide-for-medium-only">
+							<div class="small-12 columns">
+								<div id="logo">
+			                        <a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="small-12 medium-10 columns">
-						<div class="row hide-for-small">
-							<div class="small-12 medium-6 columns">
+					<div class="small-12 large-10 columns">
+						<div class="row hide-for-medium hide-for-small">
+							<div class="small-12 medium-7 columns">
 								<div id="phone-container">
 									 <p>Call us on <span><?php echo pxls_get_company_telephone(); ?></span></p>
 								</div>
 							</div>
-							<div class="small-12 medium-6 columns">
+							<div class="small-12 medium-5 columns">
 								<div id="courtesy-container">
 									 <?php if ( has_nav_menu('courtesy-menu') ) { wp_nav_menu( array('theme_location' => 'courtesy-menu' ) ); } ?>
 								</div>
