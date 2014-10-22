@@ -20,12 +20,53 @@
 	<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 	
 	<script src="<?php echo trailingslashit( PXLS_URI ) ?>js/vendor/modernizr.js"></script>
-
+<!--
 	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-	
+-->
+
 	<?php wp_head(); ?>
     
 	<?php get_template_part( 'parts/tpl-head-ie', get_post_format() ); ?>
+
+	<script>
+(function(){
+    function addFont() {
+        var style = document.createElement('style');
+        style.rel = 'stylesheet';
+        document.head.appendChild(style);
+        style.textContent = localStorage.ralewayFont;
+    }
+
+    try {
+        if (localStorage.ralewayFont) {
+            // The font is in localStorage, we can load it directly
+            addFont();
+        } else {
+            // We have to first load the font file asynchronously
+            var request = new XMLHttpRequest();
+            request.open('GET', '<?php echo trailingslashit( PXLS_URI ) ?>font/raleway.woff.css', true);
+
+            request.onload = function() {
+                if (request.status >= 200 && request.status < 400) {
+                    // We save the file in localStorage
+                    localStorage.ralewayFont = request.responseText;
+
+                    // ... and load the font
+                    addFont();
+                }
+            }
+
+            request.send();
+        }
+    } catch(ex) {
+        // maybe load the font synchronously for woff-capable browsers
+        // to avoid blinking on every request when localStorage is not available
+    }
+}());
+</script>
+<noscript>
+	<link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+</noscript>
 
 </head>
 

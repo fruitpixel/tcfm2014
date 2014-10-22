@@ -128,7 +128,7 @@ if ( ! function_exists( 'pxls_enqueue_css' ) ) {
 	 * Enqueue the sites css
 	 */
 	function pxls_enqueue_css() {
-		wp_register_style( 'theme-style', get_stylesheet_directory_uri() . '/css/style.css' );	
+		wp_register_style( 'theme-style', get_stylesheet_directory_uri() . '/css/style.min.css' );	
 		wp_enqueue_style( 'theme-style' );
 	}
 }
@@ -145,12 +145,15 @@ if ( ! function_exists( 'pxls_enqueue_js' ) ) {
 	 */
 	function pxls_enqueue_js() {
 
-		wp_register_script( 'fastclick', get_template_directory_uri() . '/js/vendor/fastclick.js' );
+		wp_deregister_script( 'jquery' );
+
+		wp_register_script( 'jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, '1.11.1', true );
+		wp_register_script( 'fastclick', get_template_directory_uri() . '/js/vendor/min/fastclick.min.js', array( 'jquery' ), false, true );
 		wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'fastclick' ), false, true );
-		wp_register_script( 'equalizer', get_stylesheet_directory_uri() . '/js/foundation/foundation.equalizer.js', array( 'foundation' ), false, true );
-		wp_register_script( 'topbar', get_stylesheet_directory_uri() . '/js/foundation/foundation.topbar.js', array( 'foundation' ), false, true );
-		wp_register_script( 'reveal', get_stylesheet_directory_uri() . '/js/foundation/foundation.reveal.js', array( 'foundation' ), false, true );
-		wp_register_script( 'interchange', get_stylesheet_directory_uri() . '/js/foundation/foundation.interchange.js', array( 'foundation' ), false, true );
+		wp_register_script( 'equalizer', get_stylesheet_directory_uri() . '/js/foundation/min/foundation.equalizer.min.js', array( 'foundation' ), false, true );
+		wp_register_script( 'topbar', get_stylesheet_directory_uri() . '/js/foundation/min/foundation.topbar.min.js', array( 'foundation' ), false, true );
+		wp_register_script( 'reveal', get_stylesheet_directory_uri() . '/js/foundation/min/foundation.reveal.min.js', array( 'foundation' ), false, true );
+		wp_register_script( 'interchange', get_stylesheet_directory_uri() . '/js/foundation/min/foundation.interchange.min.js', array( 'foundation' ), false, true );
 		wp_register_script( 'video', '//vjs.zencdn.net/4.6/video.js', array( 'reveal' ), false, true );
 		wp_register_script( 'app', get_stylesheet_directory_uri() . '/js/app.js', array( 'video' ), false, true );
 		//wp_register_script( 'cycle2', get_template_directory_uri() . '/js/jquery.cycle2.min.js', array( 'app' ), false, true );
