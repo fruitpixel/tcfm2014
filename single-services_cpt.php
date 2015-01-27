@@ -99,7 +99,9 @@
 							<div class="small-12 medium-8 columns end">
 								<div class="more-info-container">
 									<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/icon-info.png" alt="Information">
-									<?php echo do_shortcode( '[gravityform id="1" name="Want more information?" ajax="true"]' ); ?>
+									<h3 class="gform_title">Want more information?</h3>
+									<span class="gform_description">We're looking forward to hearing from you.</span>
+									<?php echo do_shortcode( '[gravityform id="1" name="Want more information?" title="false" description="false" ajax="true"]' ); ?>
 								</div>									
 							</div>
 						</div>

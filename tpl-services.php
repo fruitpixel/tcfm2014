@@ -21,6 +21,7 @@ get_header( 'services' ); ?>
 					<?php get_template_part( 'parts/tpl-before-content', 'services' ); ?>
 
 					<?php $servicespage = get_page_by_path( 'services' ); ?>
+					<?php //var_dump($servicespage);?>
 					<?php if ( $servicespage ) : ?>
 						
 
