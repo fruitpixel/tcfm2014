@@ -1,3 +1,12 @@
+@import "foundation";
+
+@import "video-js";
+
+// putting gravity forms css here, instead of GF outputting it's own css in the 
+// footer (wtf??) allows us to override the default settings in our stylesheet 
+@import "gravityforms";
+
+
 $tcfm-color-lightblue: #cedae7;
 $tcfm-color-darkblue: #233588;
 $tcfm-color-mediumblue: #22b0f9;
@@ -404,6 +413,18 @@ footer {
 			}
 		}
 	}
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0; 
+}
+
+.social-icon {
+  float: right;
+  height: 35px;
+  margin-left: 5px;
+  width: 35px; 
 }
 
 .page-angled-bg {

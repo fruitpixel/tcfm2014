@@ -1,4 +1,4 @@
-;jQuery(function($){
+jQuery(function($){
 
 	$('.twitter-updates').attr( 'data-cycle-slides', 'li');
 
