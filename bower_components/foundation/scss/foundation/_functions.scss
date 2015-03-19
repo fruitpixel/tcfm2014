@@ -15,6 +15,7 @@ $modules: () !default;
   $module_index: index($modules, $name);
   @if (($module_index == null) or ($module_index == false)) {
     $modules: append($modules, $name) !global;
+
     @content;
   }
 }

@@ -1,3 +1,365 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 43, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 76, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 116, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 167, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+sup {
+  top: -0.5em; }
+
+/* line 171, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 254, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 423, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/normalize */
+td, th {
+  padding: 0; }
+
+/*@import "ralewayfont";*/
 /* line 348, bower_components/foundation/scss/foundation/components/global */
 meta.foundation-version {
   font-family: "/5.5.1/"; }
@@ -10789,64 +11151,199 @@ to no.
   content: none; }
 
 @keyframes searchexpand {
-  /* line 17, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 16, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   0% {
     background-position: center;
     width: 40px; }
 
-  /* line 21, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 20, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   99% {
     background-position: center;
     width: 200px; }
 
-  /* line 25, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 24, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   100% {
     background-position: -40px -40px;
     width: 200px; } }
 
-/* line 33, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 32, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 html, body {
   background: #cedae7;
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0; }
 
-/* line 41, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 40, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 h1, h2 {
   color: #233588;
   font-family: inherit;
   font-weight: 300; }
 
-/* line 47, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 46, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 h1 {
   font-size: 28px; }
+  /* line 48, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  h1.twitter-title {
+    background: url("../images/icon-twitter.png") no-repeat scroll left center transparent;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 38px;
+    margin-bottom: 20px;
+    min-height: 38px;
+    padding-left: 55px; }
+  /* line 58, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  h1.connect-title {
+    background: url("../images/connect-me-icon.png") no-repeat scroll left center transparent;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 37px;
+    padding-left: 55px; }
+  /* line 67, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-post h1, .page-template-tpl-csr-php h1 {
+    margin-top: 20px; }
+  /* line 70, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .sidebar-item h1 {
+    margin-top: 5px; }
+  /* line 73, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-staff_profile h1 {
+    color: #233588;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0; }
+    /* line 80, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .single-staff_profile h1.connect-title, .single-staff_profile h1.twitter-title {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 37px; }
+    /* line 86, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .single-staff_profile h1.twitter-title {
+      margin-bottom: 15px; }
+  /* line 91, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .page-template-tpl-testimonials-php h1 {
+    margin-bottom: 20px; }
 
-/* line 50, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 95, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 h2 {
   font-size: 18px;
   font-weight: 400; }
+  /* line 98, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .post-content h2 {
+    color: #233588;
+    font-size: 28px;
+    font-weight: 300;
+    padding: 0.5em 0 0.8em; }
 
-/* line 56, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 106, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.post-content h3 {
+  color: #233588;
+  font-size: 18px;
+  padding: 0.5em 0 0.8em; }
+
+/* line 114, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.quote-container p {
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.4; }
+/* line 119, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.sidebar-social-media p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 15px 0; }
+
+/* line 128, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 a {
-  color: #ed1c24; }
+  color: #22b0f9; }
+  /* line 130, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  a:hover {
+    color: #e41b13; }
+  /* line 133, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .social-icon a {
+    display: block;
+    height: 35px;
+    width: 35px; }
 
-/* line 60, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 144, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+img.attachment-staff-profile {
+  width: 100%; }
+
+/* line 149, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0; }
+  /* line 154, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .post blockquote, .post-content blockquote {
+    background: url("../images/blockquote.png") no-repeat scroll 0 0 transparent;
+    padding-left: 65px; }
+
+/* line 159, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+blockquote, blockquote p {
+  color: #235388;
+  font-weight: bold; }
+
+/* line 166, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.post-content blockquote {
+  background: url("../images/blockquote.png") no-repeat scroll 0 0 transparent;
+  padding-left: 65px; }
+  /* line 169, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .post-content blockquote p {
+    line-height: 1.3;
+    margin: 0; }
+  /* line 173, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .post-content blockquote p:first-of-type {
+    color: #235388;
+    font-size: 20px;
+    font-weight: 300; }
+  /* line 178, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .post-content blockquote p:last-of-type {
+    color: #235388;
+    font-size: 19px;
+    font-weight: bold; }
+/* line 184, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.single-testimonials_cpt .post-content {
+  padding-top: 0; }
+
+/* line 190, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.archive-items .testimonial {
+  margin-bottom: 30px; }
+
+/* line 195, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.testimonial-content {
+  background: #fff;
+  padding: 40px; }
+
+/* line 199, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.testimonial-title {
+  background: url("../images/testimonial-white-triangle.png") no-repeat scroll 0 0 transparent;
+  height: 100px;
+  margin-left: 35px;
+  padding: 50px 0 0 110px; }
+
+/* line 207, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .container {
   margin-right: auto;
   margin-left: auto;
   max-width: 1280px;
   /*position: relative;*/ }
-  /* line 65, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 212, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .container.has-button {
     padding-bottom: 45px; }
 
-/* line 70, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 217, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .button-container {
   position: absolute;
   right: 15px;
   bottom: 0; }
+  /* line 222, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .csr-child .button-container, .accreditation .button-container {
+    right: 0; }
 
-/* line 77, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 227, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .button {
   background: url("../images/arrow-red-right-small.png") no-repeat scroll right center #22b0f9;
   color: #fff;
@@ -10855,61 +11352,65 @@ a {
   line-height: 37px;
   margin: 0;
   padding: 0 48px 0 13px; }
-  /* line 85, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 235, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .button.back-button {
+    background: url("../images/arrow-red-left-small.png") no-repeat scroll left center #22b0f9;
+    padding: 0 13px 0 48px; }
+  /* line 239, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .button:hover {
-    background-color: #22b0f9; }
+    background-color: #233588; }
 
-/* line 90, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 244, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 header {
   margin-top: 50px;
   margin-bottom: 40px; }
-  /* line 94, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 248, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   header #phone-container p {
     color: #233588;
     font-size: 21px;
     line-height: 1;
     margin: 0; }
-    /* line 99, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 253, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     header #phone-container p span {
       font-weight: bold; }
-  /* line 105, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 259, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   header #courtesy-container .menu {
     list-style: none;
     margin: 0; }
-    /* line 108, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 262, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     header #courtesy-container .menu .menu-item {
       float: right;
       font-size: 16px;
       margin-left: 15px; }
-      /* line 112, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 266, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
       header #courtesy-container .menu .menu-item a {
         color: #233588; }
-  /* line 119, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 273, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   header #topnav-container .top-bar {
     background: #233588;
     height: 40px;
     margin-top: 14px; }
-    /* line 123, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 277, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     header #topnav-container .top-bar .top-bar-section {
       background: #233588; }
-      /* line 125, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 279, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
       header #topnav-container .top-bar .top-bar-section li {
         background: #233588; }
-        /* line 127, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+        /* line 281, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
         header #topnav-container .top-bar .top-bar-section li.has-form {
           height: 40px;
           padding-right: 0; }
-          /* line 130, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+          /* line 284, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
           header #topnav-container .top-bar .top-bar-section li.has-form form {
             position: relative; }
-            /* line 132, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+            /* line 286, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
             header #topnav-container .top-bar .top-bar-section li.has-form form input {
               border: 0;
               height: 40px;
               padding-top: 0;
               padding-bottom: 0;
               top: 0; }
-            /* line 139, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+            /* line 293, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
             header #topnav-container .top-bar .top-bar-section li.has-form form input[type="search"] {
               background: url("../images/spyglass.png") no-repeat scroll right center #fff;
               float: right;
@@ -10918,7 +11419,7 @@ header {
               -webkit-transition: all 0.5s ease-out;
               transition: all 0.5s ease-out;
               z-index: 10; }
-              /* line 147, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+              /* line 301, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
               header #topnav-container .top-bar .top-bar-section li.has-form form input[type="search"]:focus {
                 /*background-position: -40px -40px;*/
                 width: 220px;
@@ -10926,7 +11427,7 @@ header {
                 -webkit-transition: all 0.5s ease-out;
                 transition: all 0.5s ease-out;
                 z-index: 1; }
-            /* line 156, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+            /* line 310, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
             header #topnav-container .top-bar .top-bar-section li.has-form form input[type="submit"] {
               background: url("../images/spyglass.png") no-repeat scroll center center #fff;
               position: absolute;
@@ -10936,30 +11437,51 @@ header {
               cursor: pointer;
               width: 40px;
               z-index: 5; }
-        /* line 170, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+        /* line 324, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
         header #topnav-container .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
           background: #233588;
           color: #fff;
+          font-family: "Raleway", sans-serif;
           font-size: 20px;
           font-weight: 300;
           line-height: 40px; }
-          /* line 176, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+          /* line 331, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
           header #topnav-container .top-bar .top-bar-section li:not(.has-form) a:not(.button):hover {
             background: #fff;
             color: #e41b13; }
+    /* line 340, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    header #topnav-container .top-bar.expanded {
+      height: auto; }
 
-/* line 192, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 348, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+  line-height: 40px;
+  top: 0; }
+
+/* line 352, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.expanded .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+  top: 50%; }
+
+/* line 358, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.top-bar-section .has-dropdown > a:hover:after {
+  border-color: transparent transparent transparent rgba(255, 0, 0, 0.4);
+  top: 18px; }
+
+/* line 367, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.home .metaslider {
+  margin-bottom: 20px; }
+/* line 370, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .metaslider .flexslider {
   margin: 0 !important;
   position: relative; }
-  /* line 195, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 373, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .metaslider .flexslider ul {
     list-style: none;
     margin: 0; }
-    /* line 200, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 378, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     .metaslider .flexslider ul.slides li img {
       width: 100%; }
-    /* line 203, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 381, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     .metaslider .flexslider ul.slides li a {
       background: url("../images/arrow-red-right.png") no-repeat scroll right center #22b0f9;
       color: #fff;
@@ -10971,7 +11493,10 @@ header {
       position: absolute;
       right: 0;
       bottom: 0; }
-    /* line 215, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 392, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .metaslider .flexslider ul.slides li a:hover {
+        background-color: #233588; }
+    /* line 396, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     .metaslider .flexslider ul.slides li .caption-wrap {
       position: absolute;
       top: 40%;
@@ -10979,105 +11504,172 @@ header {
       bottom: auto;
       width: auto;
       opacity: 1; }
-      /* line 222, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 403, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
       .metaslider .flexslider ul.slides li .caption-wrap .caption {
         background: #233588;
         color: #fff;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 200;
         line-height: 1.2;
         padding: 20px; }
-    /* line 233, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 414, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     .metaslider .flexslider ul.flex-direction-nav {
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 99; }
-      /* line 238, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 419, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
       .metaslider .flexslider ul.flex-direction-nav li {
         float: left; }
-        /* line 240, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+        /* line 421, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
         .metaslider .flexslider ul.flex-direction-nav li a {
+          background: url("../images/slider-arrows-sprite.png") no-repeat scroll center center transparent;
           display: block;
           height: 55px;
           opacity: 1;
           position: relative;
+          transition: none;
           width: 47px; }
-          /* line 246, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+          /* line 429, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
           .metaslider .flexslider ul.flex-direction-nav li a.flex-prev {
-            background: url("../images/arrow-blue-left.png") no-repeat scroll center center transparent;
+            background-position: 0 0;
             left: 0; }
-          /* line 250, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+            /* line 432, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+            .metaslider .flexslider ul.flex-direction-nav li a.flex-prev:hover {
+              background-position: 0 -55px; }
+          /* line 436, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
           .metaslider .flexslider ul.flex-direction-nav li a.flex-next {
-            background: url("../images/arrow-red-right.png") no-repeat scroll center center transparent;
+            background-position: -47px 0;
             right: 0; }
-      /* line 256, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-      .single-services .metaslider .flexslider ul.flex-direction-nav {
+            /* line 439, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+            .metaslider .flexslider ul.flex-direction-nav li a.flex-next:hover {
+              background-position: -47px -55px; }
+          /* line 443, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+          .metaslider .flexslider ul.flex-direction-nav li a.flex-disabled {
+            background-image: url("../images/slider-arrows-sprite-disabled.png"); }
+      /* line 451, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .single-services_cpt .metaslider .flexslider ul.flex-direction-nav, .single-post .metaslider .flexslider ul.flex-direction-nav, .single-case_study .metaslider .flexslider ul.flex-direction-nav, .page-template-tpl-csr-php .metaslider .flexslider ul.flex-direction-nav {
         left: auto;
         right: 0; }
-  /* line 263, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 458, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .metaslider .flexslider ol.flex-control-nav {
     display: none; }
 
-/* line 272, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 470, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.home-news .attachment-news-item-thumb {
+  margin-bottom: 10px; }
+/* line 473, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .home-news p {
   font-size: 13px;
   font-weight: 300; }
 
-/* line 282, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 483, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 #home-testimonials-container .testimonials {
   padding-top: 25px; }
-  /* line 285, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 486, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   #home-testimonials-container .testimonials img.vacancies-bg {
     height: 100%;
     width: 100%; }
+/* line 493, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+#home-testimonials-container .latest-vacancies {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative; }
+  /* line 497, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  #home-testimonials-container .latest-vacancies .button-container {
+    right: 0; }
 
-/* line 294, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 504, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .testimonial {
   padding-top: 22px;
   position: relative; }
-  /* line 297, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 507, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .testimonial .client-name {
     background: #051c35;
     color: #fff;
     font-size: 18px;
     font-weight: 300;
+    height: 44px;
     line-height: 44px;
     margin: 0;
+    overflow: hidden;
     padding: 0 12px;
     position: absolute;
+    text-overflow: ellipsis;
     top: 0;
     left: 0; }
-  /* line 309, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 522, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .testimonial .content {
     background: #fff;
-    padding: 35px 10px 60px; }
-    /* line 312, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    padding: 35px 20px 51px; }
+    /* line 525, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     .testimonial .content p {
       font-size: 13px;
       margin: 0; }
-  /* line 317, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 530, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .testimonial .button-container {
     right: 0; }
-  /* line 321, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-  .sidebar-content .testimonial {
-    margin-bottom: 40px; }
+  /* line 534, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  #home-testimonials-container .testimonial {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
-/* line 326, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 541, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .testimonials-title {
   background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
   color: #fff;
   font-size: 26px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 53px;
   min-height: 53px;
   padding-left: 65px; }
-  /* line 334, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-  .single-services .testimonials-title {
+  /* line 549, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-services_cpt .testimonials-title {
     font-size: 22px;
     margin-bottom: 30px; }
 
-/* line 340, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 555, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.casestudy-title {
+  background: url("../images/casestudy-icon.png") no-repeat scroll left center transparent;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 37px;
+  padding-left: 55px; }
+
+/* line 563, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.casestudy {
+  padding-top: 22px;
+  position: relative; }
+  /* line 566, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .casestudy .title {
+    background: #051c35;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 44px;
+    margin: 0;
+    max-height: 44px;
+    padding: 0 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  /* line 582, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .casestudy .content {
+    background: #fff;
+    padding: 35px 10px 60px; }
+    /* line 585, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .casestudy .content p {
+      font-size: 13px;
+      margin: 0; }
+  /* line 590, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .casestudy .button-container {
+    right: 0; }
+
+/* line 596, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .news-title {
   background: url("../images/news-icon.png") no-repeat scroll left center transparent;
   color: #fff;
@@ -11088,37 +11680,80 @@ header {
   min-height: 38px;
   padding-left: 65px; }
 
-/* line 350, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 606, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .news {
   margin-bottom: 20px; }
-  /* line 352, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 608, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .news .title {
     color: #22b0f9;
     font-size: 18px; }
-  /* line 356, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 612, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .news .content {
     color: #e5e5e5; }
-    /* line 358, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 614, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     .news .content p {
       font-size: 13px; }
 
-/* line 364, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.sidebar-container {
-  background: -moz-linear-gradient(6deg, transparent 30px, #235388 29px);
-  background: -o-linear-gradient(6deg, transparent 30px, #235388 29px);
-  background: -webkit-linear-gradient(6deg, transparent 30px, #235388 29px);
-  background: linear-gradient(6deg, transparent 30px, #235388 29px);
+/* line 622, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.twitter-updates {
+  list-style: none;
+  margin: 0; }
+
+/* line 626, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.tweetli {
+  margin-bottom: 15px; }
+  /* line 628, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .tweetli p {
+    color: #e5e5e5;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0; }
+  /* line 634, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .tweetli a {
+    color: #22b0f9; }
+  /* line 637, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .tweetli .intent {
+    display: none; }
+  /* line 640, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .tweetli .timeline {
+    font-size: 13px;
+    font-weight: 300; }
+
+/* line 646, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.post-content {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* line 651, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.sidebar-outercontainer {
   position: relative; }
 
-/* line 371, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.sidebar-content {
-  padding: 15px 15px 300px; }
+/* line 654, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.sidebar-container {
+  background: url("../images/sidebar-bg.png") no-repeat scroll bottom left transparent;
+  position: absolute;
+  padding: 0 0 300px;
+  width: 100%; }
+  /* line 659, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-post .sidebar-container {
+    padding-bottom: 200px; }
+  /* line 662, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-testimonials_cpt .sidebar-container {
+    /*padding-bottom: 100px;*/ }
 
-/* line 376, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 666, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.sidebar-content {
+  padding: 0; }
+
+/* line 670, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.sidebar-item {
+  padding: 20px 25px; }
+
+/* line 676, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .sidebar-skewed-outercontainer {
   position: relative; }
 
-/* line 379, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 679, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .sidebar-skewed-container {
   width: 100%;
   -webkit-transform: skewY(6deg);
@@ -11128,7 +11763,7 @@ header {
   background: #235388;
   position: absolute;
   top: -16px; }
-  /* line 388, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 688, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   .sidebar-skewed-container .sidebar-skewed-content {
     -webkit-transform: skewY(-6deg);
     -moz-transform: skewY(-6deg);
@@ -11136,89 +11771,243 @@ header {
     transform: skewY(-6deg);
     background: transparent; }
 
-/* line 398, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 697, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.quote-container {
+  background: url("../images/quote-icon.png") no-repeat scroll 0 0 transparent;
+  padding-left: 60px; }
+  /* line 700, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .quote-container .quotee, .quote-container .quotee-position {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0; }
+
+/* line 709, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.more-info-container {
+  margin-top: -100px; }
+  /* line 711, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .more-info-container h3 {
+    color: #233588;
+    font-size: 22px;
+    font-weight: 300; }
+  /* line 718, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .more-info-container .gform_wrapper h3.gform_title {
+    color: #233588;
+    font-size: 22px;
+    font-weight: 300; }
+  /* line 724, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .more-info-container .gform_wrapper input[type="text"] {
+    margin: 0;
+    width: 100% !important; }
+  /* line 728, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .more-info-container .gform_wrapper input.gform_button {
+    min-width: 100px; }
+  /* line 736, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .more-info-container .gf_browser_ie.gform_wrapper .gform_footer input.button {
+    padding: 0 48px 0 13px; }
+
+/* line 748, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.share-article-container {
+  margin-top: -100px; }
+  /* line 750, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .share-article-container .addthis_sharing_toolbox {
+    margin-top: 20px; }
+
+/* line 757, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 footer {
   padding-top: 20px;
   padding-bottom: 20px; }
-  /* line 401, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  /* line 760, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
   footer .menu {
     list-style: none;
     margin: 0; }
-    /* line 404, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    /* line 763, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
     footer .menu .menu-item {
       float: left; }
-      /* line 406, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 765, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
       footer .menu .menu-item:not(:first-child) {
         padding-left: 10px; }
-      /* line 409, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      /* line 768, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
       footer .menu .menu-item a {
         color: #233588;
         font-size: 12px;
         line-height: 20px; }
+  /* line 778, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-services_cpt footer, .single-post footer, .single-case_study footer {
+    background: #e5e5e5; }
+  /* line 781, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-testimonials_cpt footer {
+    padding-top: 0; }
 
-/* line 418, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 786, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .social-icons {
   list-style: none;
   margin: 0; }
 
-/* line 423, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 790, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .social-icon {
   float: right;
   height: 35px;
   margin-left: 5px;
   width: 35px; }
 
-/* line 430, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 799, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.social-icons {
+  list-style: none;
+  margin: 0; }
+
+/* line 804, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.social-icon {
+  float: right;
+  height: 35px;
+  margin-left: 5px;
+  width: 35px; }
+
+/* line 811, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .page-angled-bg {
   background: url("../images/angle-bg-1.png") no-repeat scroll center top #235388;
   background-size: contain;
+  margin-top: 30px;
   padding-top: 90px;
   padding-bottom: 60px; }
+  /* line 825, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-services_cpt .page-angled-bg, .single-post .page-angled-bg, .single-case_study .page-angled-bg, .single-staff_profile .page-angled-bg, .single-testimonials_cpt .page-angled-bg, .page-template-tpl-contact-us-php .page-angled-bg, .page-template-tpl-csr-php .page-angled-bg, .page-template-default:not(.home) .page-angled-bg {
+    background: url("../images/angle-bg-2.png") no-repeat scroll center top #e5e5e5;
+    background-size: contain;
+    min-height: 300px;
+    padding-bottom: 0; }
+  /* line 834, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-testimonials_cpt .page-angled-bg, .page-template-tpl-accreditations-php .page-angled-bg, .page-template-default:not(.home) .page-angled-bg {
+    margin-bottom: 20px; }
+  /* line 837, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-testimonials_cpt .page-angled-bg {
+    margin-top: 0; }
 
-/* line 440, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 842, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.breadcrumbs {
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 25px;
+  padding: 0; }
+  /* line 847, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .breadcrumbs li {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: none; }
+    /* line 852, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .breadcrumbs li a {
+      color: #22b0f9; }
+    /* line 855, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .breadcrumbs li.current {
+      color: #233588; }
+    /* line 858, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .breadcrumbs li:before {
+      color: #233588; }
+  /* line 862, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-staff_profile .breadcrumbs {
+    margin-bottom: 0; }
+
+/* line 868, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.post-thumbnail img {
+  width: 100%; }
+
+/* line 876, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 .blog h1, .archive h1 {
   font-size: 36px;
   margin-bottom: 30px; }
-/* line 445, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.blog article img, .archive article img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-  /* Firefox 10+, Firefox on Android */
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-  /* Chrome 19+, Safari 6+, Safari 6+ iOS */ }
-/* line 450, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.blog article .content, .archive article .content {
-  background: #fff;
-  padding: 23px 18px; }
-  /* line 453, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-  .blog article .content h2, .archive article .content h2 {
-    color: #22b0f9;
-    font-size: 18px;
-    line-height: 1.2;
-    margin-top: 0; }
-  /* line 459, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-  .blog article .content p, .archive article .content p {
-    color: #333;
-    font-size: 13px;
-    line-height: 1.4; }
-/* line 466, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.blog article:hover img, .archive article:hover img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(0%); }
-/* line 471, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.blog article:hover .content h2, .archive article:hover .content h2 {
-  color: #233588; }
-/* line 475, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.blog article:hover .content .button-container .button, .archive article:hover .content .button-container .button {
-  background-color: #233588; }
-/* line 482, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.blog .contact-link-container, .archive .contact-link-container {
+/* line 880, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.blog article, .archive article {
+  margin-bottom: 30px;
+  position: relative; }
+  /* line 883, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .blog article img, .archive article img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    /* Firefox 10+, Firefox on Android */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    width: 100%; }
+  /* line 889, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .blog article .content, .archive article .content {
+    background: #fff;
+    padding: 23px 18px; }
+    /* line 892, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .blog article .content h2, .archive article .content h2 {
+      color: #22b0f9;
+      font-size: 18px;
+      line-height: 1.2;
+      margin-top: 0; }
+    /* line 898, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .blog article .content p, .archive article .content p {
+      color: #333;
+      font-size: 13px;
+      line-height: 1.4; }
+  /* line 905, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .blog article:hover img, .archive article:hover img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%); }
+  /* line 910, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .blog article:hover .content h2, .archive article:hover .content h2 {
+    color: #233588; }
+  /* line 914, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .blog article:hover .content .button-container .button, .archive article:hover .content .button-container .button {
+    background-color: #233588; }
+  /* line 920, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .blog article .button-container, .archive article .button-container {
+    right: 0; }
+
+/* line 928, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.blog .content {
+  min-height: 235px; }
+
+/* line 935, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.paginate-outer-container .paginate-inner-container {
+  display: table;
+  margin: 0 auto; }
+  /* line 939, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .paginate-outer-container .paginate-inner-container ul.page-numbers {
+    list-style: none; }
+  /* line 942, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .paginate-outer-container .paginate-inner-container ul li {
+    display: inline; }
+    /* line 944, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .paginate-outer-container .paginate-inner-container ul li .page-numbers {
+      background: #fff;
+      color: #22b0f9;
+      display: block;
+      float: left;
+      font-size: 18px;
+      font-weight: 300;
+      height: 37px;
+      line-height: 33px;
+      padding: 0 5px;
+      text-align: center;
+      width: 30px; }
+      /* line 956, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .paginate-outer-container .paginate-inner-container ul li .page-numbers.current {
+        color: #233588; }
+      /* line 959, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .paginate-outer-container .paginate-inner-container ul li .page-numbers.next {
+        background: url("../images/arrow-red-right-small.png") no-repeat scroll 0 0 #fff;
+        font-size: 1px;
+        text-indent: -9999px; }
+      /* line 964, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .paginate-outer-container .paginate-inner-container ul li .page-numbers.prev {
+        background: url("../images/arrow-red-left-small.png") no-repeat scroll 0 0 #fff;
+        font-size: 1px;
+        text-indent: -9999px; }
+      /* line 969, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .paginate-outer-container .paginate-inner-container ul li .page-numbers:not(:first-child) {
+        border-left: 1px solid #cedae7; }
+
+/* line 981, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-link-container {
   background: url("../images/get-in-touch-icon.png") no-repeat scroll left center transparent;
   margin: 20px 0;
   padding-left: 56px; }
-  /* line 486, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-  .blog .contact-link-container a, .archive .contact-link-container a {
+  /* line 985, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .contact-link-container a {
     background: url("../images/arrow-red-right-small.png") no-repeat scroll right center transparent;
     color: #fff;
     display: inline-block;
@@ -11227,20 +12016,385 @@ footer {
     line-height: 37px;
     padding-right: 47px; }
 
-/* line 499, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.archive .archive-items {
+/* line 999, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.archive .archive-items, .page-template-tpl-services-php .archive-items {
   margin-top: 40px; }
-  /* line 502, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-  .archive .archive-items article .content {
-    background: transparent;
-    padding: 0; }
-/* line 508, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
-.archive #contact {
+  /* line 1001, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .archive .archive-items article, .page-template-tpl-services-php .archive-items article {
+    margin-bottom: 30px; }
+    /* line 1003, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .archive .archive-items article img, .page-template-tpl-services-php .archive-items article img {
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+      /* Firefox 10+, Firefox on Android */
+      filter: gray;
+      /* IE6-9 */
+      -webkit-filter: grayscale(100%);
+      /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+      width: 100%; }
+    /* line 1009, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .archive .archive-items article .content, .page-template-tpl-services-php .archive-items article .content {
+      background: transparent;
+      padding: 0;
+      position: relative; }
+      /* line 1013, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .archive .archive-items article .content img, .page-template-tpl-services-php .archive-items article .content img {
+        width: 100%; }
+      /* line 1016, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .archive .archive-items article .content .button-container, .page-template-tpl-services-php .archive-items article .content .button-container {
+        right: 0; }
+    /* line 1021, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .archive .archive-items article:hover img, .page-template-tpl-services-php .archive-items article:hover img {
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+      -webkit-filter: grayscale(0%); }
+/* line 1028, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.archive #contact, .page-template-tpl-services-php #contact {
   margin-top: 30px; }
 
-/* line 516, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 1033, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.staff-profile {
+  margin-bottom: 40px; }
+
+/* line 1036, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.staff-profile-content {
+  background: #fff;
+  min-height: 330px;
+  padding-bottom: 60px;
+  position: relative; }
+  /* line 1041, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .staff-profile-content img {
+    width: 100%; }
+  /* line 1044, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .staff-profile-content ul {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px 20px; }
+    /* line 1049, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .staff-profile-content ul li {
+      list-style: none;
+      float: left; }
+      /* line 1052, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .staff-profile-content ul li:not(:first-child) {
+        margin-left: 10px; }
+  /* line 1058, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .staff-profile-content .button {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+
+/* line 1065, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.staff-name {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0 0;
+  text-align: center; }
+
+/* line 1072, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.staff-job-title {
+  color: #235388;
+  font-size: 16px;
+  margin: 0;
+  min-height: 54px;
+  text-align: center; }
+  /* line 1078, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .single-staff_profile .staff-job-title {
+    text-align: left; }
+
+/* line 1085, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.sidebar-social-icons {
+  list-style: none;
+  margin: 10px 0; }
+  /* line 1088, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .sidebar-social-icons li {
+    float: left; }
+    /* line 1090, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .sidebar-social-icons li:not(:first-child) {
+      margin-left: 25px; }
+
+/* line 1096, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-info-container {
+  margin-top: 30px; }
+
+/* line 1099, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-info {
+  background: #fff;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 55px 15px 15px;
+  position: relative; }
+
+/* line 1106, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-info-icon {
+  height: 85px;
+  position: absolute;
+  top: -49px;
+  left: 50%;
+  width: 85px; }
+
+/* line 1113, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-info-icon-speechbubble {
+  background: url("../images/speechbubble-small.png") no-repeat scroll center center #233588;
+  height: 85px;
+  width: 85px;
+  position: relative;
+  left: -50%; }
+
+/* line 1120, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-info-icon-map {
+  background: url("../images/map-icon.png") no-repeat scroll center center #233588;
+  height: 85px;
+  width: 85px;
+  position: relative;
+  left: -50%; }
+
+/* line 1127, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-info-content {
+  color: #534d48;
+  font-size: 15px;
+  text-align: center; }
+  /* line 1131, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .contact-info-content span {
+    color: #233588;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 7px; }
+
+/* line 1139, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-us-more-info-container {
+  background: #fff;
+  margin-bottom: 30px; }
+
+/* line 1143, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-us-more-info-text {
+  padding: 3rem; }
+
+/* line 1146, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.contact-us-more-info-image {
+  background-position: center;
+  background-size: cover; }
+  /* line 1149, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .contact-us-more-info-image img {
+    width: 100%; }
+
+/* line 1154, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.map-container img {
+  width: 100%; }
+
+/* line 1161, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.page-template-tpl-csr-php ol {
+  counter-reset: my-counter;
+  list-style: none;
+  margin: 20px 0; }
+  /* line 1165, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .page-template-tpl-csr-php ol li {
+    background: #fff;
+    color: #233588;
+    height: 170px;
+    min-height: 80px;
+    float: left;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-right: 2%;
+    margin-bottom: 15px;
+    padding: 15px 10px 15px 85px;
+    position: relative;
+    width: 48%; }
+    /* line 1178, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .page-template-tpl-csr-php ol li:before {
+      background: #233588;
+      color: #fff;
+      content: counter(my-counter);
+      counter-increment: my-counter;
+      font-size: 45px;
+      height: 100%;
+      line-height: 1;
+      padding: 15px 25px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 74px; }
+
+/* line 1197, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.csr-child {
+  background: #fff;
+  height: 160px;
+  margin-bottom: 30px;
+  padding: 20px 20px 50px;
+  position: relative; }
+
+/* line 1204, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.csr-child-content {
+  text-align: center; }
+
+/* line 1209, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.accreditations {
+  margin-top: 40px; }
+
+/* line 1212, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.accreditation {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 30px 30px 60px;
+  position: relative; }
+
+/* line 1218, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.accreditation-content {
+  text-align: center; }
+
+/* line 1221, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.accreditation-button {
+  background-image: url("../images/info-button-icon.png"); }
+
+/* line 1225, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.accreditation-popover-topbar {
+  background: #233588;
+  height: 50px;
+  position: relative; }
+
+/* line 1231, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.accreditation-popover-content {
+  padding: 30px 50px;
+  text-align: center; }
+
+/* line 1236, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.reveal-modal-bg {
+  background: #cedae7;
+  background: rgba(206, 218, 231, 0.45); }
+
+/* line 1240, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.reveal-modal {
+  max-width: 100%;
+  padding: 0; }
+  /* line 1243, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .reveal-modal .close-reveal-modal {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 50px;
+    top: 0;
+    right: 20px; }
+
+/* line 1254, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.page-banner {
+  position: relative; }
+  /* line 1256, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .page-banner h1 {
+    color: #233588;
+    font-size: 36px;
+    font-weight: 300; }
+  /* line 1261, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .page-banner.has-post-thumbnail {
+    margin-bottom: 20px; }
+    /* line 1263, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .page-banner.has-post-thumbnail h1 {
+      background: #233588;
+      color: #fff;
+      line-height: 1;
+      max-width: 70%;
+      padding: 17px 20px;
+      position: absolute;
+      top: 30%; }
+
+/* line 1277, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.search-results h1 {
+  margin-bottom: 1em; }
+/* line 1280, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.search-results article {
+  background: #fff;
+  margin-bottom: 25px;
+  position: relative; }
+  /* line 1284, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .search-results article .content {
+    padding: 20px 20px 50px; }
+    /* line 1286, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .search-results article .content .button-container {
+      right: 0; }
+
+/* line 1294, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.child-services .type-services_cpt {
+  margin-bottom: 20px;
+  position: relative; }
+  /* line 1297, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .child-services .type-services_cpt img {
+    width: 100%; }
+  /* line 1300, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .child-services .type-services_cpt .button-container {
+    right: 0; }
+
+/* line 1309, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 #wpstats {
   float: left;
   visibility: hidden; }
+
+@media only screen and (max-width: 40em) {
+  /* line 5, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  #logo {
+    text-align: center; }
+
+  /* line 8, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .sidebar-container {
+    background-size: cover;
+    padding-bottom: 90px;
+    position: relative; }
+
+  /* line 14, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .top-bar-section .has-dropdown > a:hover:after {
+    top: 50%; }
+
+  /* line 18, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .metaslider .flexslider ul.slides li .caption-wrap {
+    top: 20%; }
+    /* line 20, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+    .metaslider .flexslider ul.slides li .caption-wrap .caption {
+      display: none;
+      font-size: 24px; }
+
+  /* line 26, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  header #topnav-container .top-bar .top-bar-section li.has-form form input[type="search"] {
+    width: 100%; }
+    /* line 28, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+    header #topnav-container .top-bar .top-bar-section li.has-form form input[type="search"]:focus {
+      width: 100%;
+      -moz-transition: none;
+      -webkit-transition: none;
+      transition: none;
+      z-index: 1; }
+
+  /* line 39, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .page-template-tpl-csr-php ol li {
+    float: none;
+    height: auto;
+    margin-right: 0;
+    width: 100%; }
+    /* line 44, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+    .page-template-tpl-csr-php ol li:before {
+      height: 100%; }
+
+  /* line 53, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .gform_wrapper .top_label li.gfield.gf_left_third, .gform_wrapper .top_label li.gfield.gf_middle_third, .gform_wrapper .top_label li.gfield.gf_right_third {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100%; }
+
+  /* line 59, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .home-news {
+    margin-top: 20px; }
+    /* line 61, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+    .home-news img {
+      width: 100%; }
+ }
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  /* line 77, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+  .page-template-tpl-csr-php ol li {
+    float: none;
+    height: auto;
+    margin-right: 0;
+    width: 100%; }
+    /* line 82, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/mediaqueries */
+    .page-template-tpl-csr-php ol li:before {
+      height: 100%; }
+ }
+
 
 /*# sourceMappingURL=style.css.map */
