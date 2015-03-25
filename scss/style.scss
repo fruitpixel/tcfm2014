@@ -1304,7 +1304,32 @@ footer {
 }
 
 
-
+.wp-count-down {
+	background-color: #235388;
+	table {
+		background-color: #235388;
+		width: 100%;
+		tr {
+			background-color: #235388;
+			td {
+				background-color: #235388;
+				border: 0;
+				color: white;
+				padding: 25px 0 30px;
+				&:nth-child(-n+2){
+				    display: none;
+				}
+			}
+			th {
+				color: white;
+				&:nth-child(-n+2){
+				    display: none;
+				}
+			}
+		}
+			
+	}
+}
 
 #wpstats {
 	float: left;

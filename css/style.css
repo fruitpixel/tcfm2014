@@ -12321,7 +12321,33 @@ footer {
   .child-services .type-services_cpt .button-container {
     right: 0; }
 
-/* line 1309, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+/* line 1307, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+.wp-count-down {
+  background-color: #235388; }
+  /* line 1309, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+  .wp-count-down table {
+    background-color: #235388;
+    width: 100%; }
+    /* line 1312, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+    .wp-count-down table tr {
+      background-color: #235388; }
+      /* line 1314, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .wp-count-down table tr td {
+        background-color: #235388;
+        border: 0;
+        color: white;
+        padding: 25px 0 30px; }
+        /* line 1319, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+        .wp-count-down table tr td:nth-child(-n+2) {
+          display: none; }
+      /* line 1323, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+      .wp-count-down table tr th {
+        color: white; }
+        /* line 1325, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
+        .wp-count-down table tr th:nth-child(-n+2) {
+          display: none; }
+
+/* line 1334, /Users/fruitpixel/Documents/Websites/tcfm.dev/wp-content/themes/tcfm2014/scss/style.scss */
 #wpstats {
   float: left;
   visibility: hidden; }
