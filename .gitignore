@@ -54,3 +54,6 @@ _ReSharper*/
 
 #NuGet
 #packages/
+prepros.cfg
+
+/node_modules/*
