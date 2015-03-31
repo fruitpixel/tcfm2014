@@ -93,7 +93,9 @@
 
 
 @media #{$large-up} { 
-
+	#topnav-container .top-bar {
+		  margin-top: 38px;
+	}
 }
 @media #{$large-only} { 
 

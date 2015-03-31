@@ -79,19 +79,19 @@
 					<div class="small-12 large-2 columns">
 						<div class="row show-for-medium-only">
 							<div class="medium-2 columns">
-								<div id="logo">
+								<div class="logo">
 			                        <a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
 								</div>
 							</div>
 							<div class="medium-10 columns">
 								<div class="row hide-for-small">
 									<div class="small-12 medium-7 columns">
-										<div id="phone-container">
+										<div class="phone-container">
 											 <p>Call us on <span><?php echo pxls_get_company_telephone(); ?></span></p>
 										</div>
 									</div>
 									<div class="small-12 medium-5 columns">
-										<div id="courtesy-container">
+										<div class="courtesy-container">
 											 <?php if ( has_nav_menu('courtesy-menu') ) { wp_nav_menu( array('theme_location' => 'courtesy-menu' ) ); } ?>
 										</div>
 									</div>
@@ -100,7 +100,7 @@
 						</div>
 						<div class="row hide-for-medium-only">
 							<div class="small-12 columns">
-								<div id="logo">
+								<div class="logo">
 			                        <a href="<?php echo home_url( '/' ); ?>"><img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
 								</div>
 							</div>
@@ -109,12 +109,12 @@
 					<div class="small-12 large-10 columns">
 						<div class="row hide-for-medium hide-for-small">
 							<div class="small-12 medium-7 columns">
-								<div id="phone-container">
+								<div class="phone-container">
 									 <p>Call us on <span><?php echo pxls_get_company_telephone(); ?></span></p>
 								</div>
 							</div>
 							<div class="small-12 medium-5 columns">
-								<div id="courtesy-container">
+								<div class="courtesy-container">
 									 <?php if ( has_nav_menu('courtesy-menu') ) { wp_nav_menu( array('theme_location' => 'courtesy-menu' ) ); } ?>
 								</div>
 							</div>

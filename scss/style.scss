@@ -244,103 +244,114 @@ blockquote, blockquote p {
 header {
 	margin-top: 50px;
 	margin-bottom: 40px;
-	#phone-container {
-		p {
-			color: $tcfm-color-darkblue;
-			font-size: 21px;
-			line-height: 1;
-			margin: 0;
-			span {
-				font-weight: bold;
+
+}
+
+.phone-container {
+	p {
+		color: $tcfm-color-darkblue;
+		font-size: 16px;
+		line-height: 1;
+		margin: 0;
+		text-transform: uppercase;
+		span {
+			font-weight: bold;
+		}
+	}
+}
+.courtesy-container {
+	.menu {
+		list-style: none;
+		margin: 0;
+		.menu-item {				
+			float: right;
+			font-size: 16px;
+			margin-left: 15px;
+			a {
+				color: $tcfm-color-darkblue;
+				text-transform: uppercase;
 			}
 		}
 	}
-	#courtesy-container {
-		.menu {
-			list-style: none;
-			margin: 0;
-			.menu-item {				
-				float: right;
-				font-size: 16px;
-				margin-left: 15px;
-				a {
-					color: $tcfm-color-darkblue;
-				}
-			}
-		}
-	}
-	#topnav-container {
-		.top-bar {
+}
+#topnav-container {
+	.top-bar {
+		background: $tcfm-color-darkblue;
+		height: 40px;
+		margin-top: 14px;			
+		.top-bar-section {
 			background: $tcfm-color-darkblue;
-			height: 40px;
-			margin-top: 14px;			
-			.top-bar-section {
+			li {
 				background: $tcfm-color-darkblue;
-				li {
-					background: $tcfm-color-darkblue;
-					&.has-form {
-						height: 40px;
-						padding-right: 0;
-						form{
-							position: relative;
-							input {							
-								border: 0;
-								height: 40px;
-								padding-top: 0;
-								padding-bottom: 0;
-								top: 0;
-							}
-							input[type="search"] {
-								background: url("../images/spyglass.png") no-repeat scroll right center #fff;
-								float: right;
-								width: 40px;
+				&.has-form {
+					height: 40px;
+					padding-right: 0;
+					form{
+						position: relative;
+						input {							
+							border: 0;
+							height: 40px;
+							padding-top: 0;
+							padding-bottom: 0;
+							top: 0;
+						}
+						input[type="search"] {
+							background: url("../images/spyglass.png") no-repeat scroll right center #fff;
+							float: right;
+							width: 40px;
+							-moz-transition: all 0.5s ease-out;
+							-webkit-transition: all 0.5s ease-out;
+							transition: all 0.5s ease-out;
+							z-index: 10;
+							&:focus {
+								/*background-position: -40px -40px;*/
+								width: 220px;
 								-moz-transition: all 0.5s ease-out;
 								-webkit-transition: all 0.5s ease-out;
 								transition: all 0.5s ease-out;
-								z-index: 10;
-								&:focus {
-									/*background-position: -40px -40px;*/
-									width: 220px;
-									-moz-transition: all 0.5s ease-out;
-									-webkit-transition: all 0.5s ease-out;
-									transition: all 0.5s ease-out;
-									z-index: 1;
-								}
+								z-index: 1;
 							}
-							input[type="submit"] {
-								background: url("../images/spyglass.png") no-repeat scroll center center #fff;
-								position: absolute;
-								right: 0;
-								font-size: 1px;
-								color: #fff;
-								cursor: pointer;
-								width: 40px;
-								z-index: 5;
-							}
-						}						
-					}
-					&:not(.has-form) {
-						a {
-							&:not(.button) {
-								background: $tcfm-color-darkblue;
-								color: #fff;
-								font-family: "Raleway", sans-serif;
-								font-size: 20px;
-								font-weight: 300;
-								line-height: 40px;
-								&:hover {
-									background: #fff;
-									color: $tcfm-color-red;
-								}
+						}
+						input[type="submit"] {
+							background: url("../images/spyglass.png") no-repeat scroll center center #fff;
+							position: absolute;
+							right: 0;
+							font-size: 1px;
+							color: #fff;
+							cursor: pointer;
+							width: 40px;
+							z-index: 5;
+						}
+					}						
+				}
+				&:not(.has-form) {
+					a {
+						&:not(.button) {
+							background: $tcfm-color-darkblue;
+							color: #fff;
+							font-family: "Raleway", sans-serif;
+							font-size: 16px;
+							font-weight: 300;
+							line-height: 40px;
+							text-transform: uppercase;
+							&:hover {
+								background: #fff;
+								color: $tcfm-color-red;
 							}
 						}
 					}
 				}
 			}
-			&.expanded {
-				height: auto;
-			}
 		}
+		&.expanded {
+			height: auto;
+		}
+	}
+}
+
+.logo {
+	header & {
+		max-width: 137px;
 	}
 }
 
@@ -354,6 +365,9 @@ header {
 }
 
 .top-bar-section .has-dropdown > a {
+	&:after {
+		top: 20px;
+	}
 	&:hover {
 		&:after {
 			border-color: transparent transparent transparent rgba(255, 0, 0, 0.4);
