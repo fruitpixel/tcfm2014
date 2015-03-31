@@ -56,4 +56,4 @@ _ReSharper*/
 #packages/
 prepros.cfg
 
-/node_modules/*
+node_modules/*

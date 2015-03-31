@@ -128,7 +128,7 @@ if ( ! function_exists( 'pxls_enqueue_css' ) ) {
 	 * Enqueue the sites css
 	 */
 	function pxls_enqueue_css() {
-		wp_register_style( 'theme-style', get_stylesheet_directory_uri() . '/css/style.css' );	
+		wp_register_style( 'theme-style', get_stylesheet_directory_uri() . '/css/style.min.css' );	
 		wp_enqueue_style( 'theme-style' );
 	}
 }

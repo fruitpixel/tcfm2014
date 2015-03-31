@@ -68,6 +68,31 @@ module.exports = function(grunt) {
       }
     },
 
+/*
+    sass: {
+      options: {
+        loadPath: ['bower_components/foundation/scss'],
+        //sourceMap: true
+      },
+      dev: {
+          options: {
+          style: 'expanded'
+        },
+        files: {
+          'css/style.css': 'scss/style.scss'
+        }
+      },
+      dist: {
+        options: {
+          style: 'compressed'
+        },
+        files: {
+          'css/style.min.css': 'scss/style.scss'
+        }
+      }
+    },
+*/
+
     jshint: {
       options: {
         jshintrc: '.jshintrc'
@@ -122,6 +147,8 @@ module.exports = function(grunt) {
       }
     }
   });
+
+//grunt.loadNpmTasks('grunt-contrib-sass');
 
 /*
   grunt.loadNpmTasks('grunt-sass');
