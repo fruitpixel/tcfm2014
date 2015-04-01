@@ -6,22 +6,96 @@
 		
 		<?php get_template_part( 'parts/tpl-before-all-content', 'front-page' ); ?>			
 		
-		
-		<div class="container">			
-			<div class="row" data-equalizer>					
-				<div class="small-12 medium-8 columns" data-equalizer-watch>
-					<div class="container has-button">
-						<?php if ( have_posts() ) : ?>
-							<?php while ( have_posts() ) : the_post(); ?>
-								<?php the_content(); ?>	
-							<?php endwhile; ?>
-						<?php endif; ?>
-						<div class="button-container">
-							<a href="<?php echo get_permalink_by_slug( 'about-us', 'page' ); ?>" class="button home-button">More about us</a>
-						</div>		
+		<?php if ( have_posts() ) : ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="home-section section-1">
+						<?php the_content(); ?>	
+						</div>
 					</div>
 				</div>
-				<div class="small-12 medium-4 columns" data-equalizer-watch>
+				
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="home-section section-2">
+							<?php
+							$field_data = get_post_meta( get_the_ID(), 'homepage-section2-content', false );
+							echo wpautop( $field_data[0] );
+							?>	
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="home-section section-3">
+							<div class="logo">
+								<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo.png" alt="TC Facilities Management Logo">
+							</div>
+							<?php
+							$field_data = get_post_meta( get_the_ID(), 'homepage-section3-content', false );
+							echo wpautop( $field_data[0] );
+							?>	
+						</div>
+					</div>
+				</div>
+
+			<?php endwhile; ?>
+		<?php endif; ?>	
+
+		<div class="row">
+			<div class="small-12 columns">
+				<div class="home-services" data-equalizer>
+					<div class="row">
+						<div class="small-12 medium-4 columns">
+							<div class="home-service service-cleaning has-button" data-equalizer-watch>
+								<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo-cleaning.png" alt="Cleaning Services">
+								<?php
+								$field_data = get_post_meta( get_the_ID(), 'homepage-cleaning-content', false );
+								echo wpautop( $field_data[0] );
+								?>	
+								<div class="button-container">								
+									<a href="" class="button home-button">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="small-12 medium-4 columns">
+							<div class="home-service service-security has-button" data-equalizer-watch>
+								<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo-security.png" alt="Security Services">
+								<?php
+								$field_data = get_post_meta( get_the_ID(), 'homepage-security-content', false );
+								echo wpautop( $field_data[0] );
+								?>	
+								<div class="button-container">								
+									<a href="" class="button home-button">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="small-12 medium-4 columns">
+							<div class="home-service service-specialist has-button" data-equalizer-watch>
+								<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/logo-specialist.png" alt="Specialist Services">
+								<?php
+								$field_data = get_post_meta( get_the_ID(), 'homepage-specialist-content', false );
+								echo wpautop( $field_data[0] );
+								?>	
+								<div class="button-container">								
+									<a href="" class="button home-button">Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>							
+		</div>
+
+		<div class="container">	
+			<!--		
+			<div class="row" data-equalizer>					
+
+				<div class="small-12 columns" data-equalizer-watch>
 					<div class="container has-button home-news">
 						<?php 
 						$args = array( 'posts_per_page' => 1 );
@@ -50,31 +124,31 @@
 					</div>
 				</div>
 			</div>
-
+			-->
 			<?php
 			$args = array(
 			        'posts_per_page'   => 2,
-			        'post_type'        => 'testimonials_cpt'
+			        'post_type'        => 'post'
 			    );
 			$testimonial_posts = get_posts( $args );
 			?>
 
-			<div id="home-testimonials-container" class="page-angled-bg">
+			<div id="home-news-container" class="page-angled-bg">
 
 				<div class="row">
-					<div class="small-12 medium-5 large-4 columns end">
-						<h1 class="testimonials-title">About our people</h1>
+					<div class="small-12 medium-6 large-5 columns end">
+						<h1 class="home-news-title">Latest news and updates</h1>
 					</div>
 				</div>
 
-				<div class="testimonials">
+				<div class="news-items">
 					<div class="row" data-equalizer>
-						<div class="small-12 large-4 columns" data-equalizer-watch>
+						<div class="small-12 large-4 columns">
 							<?php if ( $testimonial_posts ) : $post = $testimonial_posts[0]; setup_postdata( $post ); ?>
-								<div class="testimonial">
-									<h2 class="client-name"><?php the_title(); ?></h2>
+								<div class="news-item" data-equalizer-watch>
+									<h2 class="news-item-headline"><?php the_title(); ?></h2>
 									<div class="content">
-										<?php echo pxls_excerpt( 15 ); ?>
+										<?php echo pxls_excerpt( 30 ); ?>
 									</div>								
 									<div class="button-container">								
 										<a href="<?php the_permalink(); ?>" class="button home-button">Read more</a>
@@ -83,21 +157,18 @@
 							<?php endif; ?>
 						</div>
 
-						<div class="small-12 large-4 columns" data-equalizer-watch>
-							<div class="latest-vacancies">
-								<img src="<?php echo trailingslashit( PXLS_URI ) ?>images/tcfm-people.jpg" alt="TCFM People" class="vacancies-bg">
-								<div class="button-container">								
-									<a href="<?php echo home_url('/'); ?>recruitment/" class="button home-button">See the latest vacancies</a>
-								</div>
+						<div class="small-12 large-4 columns">
+							<div class="latest-tweets" data-equalizer-watch>
+								<?php echo do_shortcode('[twitter-feed username="Tcfacilitiesmgt" followlink="no" followbutton="no" img="no" conditional="no" phptime="d.m.y" tweetintent="no" num="2" ulclass="twitter-updates" liclass="tweetli" smalltimeclass="tweettime"]'); ?>
 							</div>
 						</div>
 
-						<div class="small-12 large-4 columns" data-equalizer-watch>
+						<div class="small-12 large-4 columns">
 							<?php if ( $testimonial_posts && count( $testimonial_posts ) > 1 ) : $post = $testimonial_posts[1]; setup_postdata( $post ); ?>
-								<div class="testimonial">
-									<h2 class="client-name"><?php the_title(); ?></h2>
+								<div class="news-item" data-equalizer-watch>
+									<h2 class="news-item-headline"><?php the_title(); ?></h2>
 									<div class="content">
-										<?php echo pxls_excerpt( 15 ); ?>
+										<?php echo pxls_excerpt( 30 ); ?>
 									</div>	
 									<div class="button-container">								
 										<a href="<?php the_permalink(); ?>" class="button home-button">Read more</a>

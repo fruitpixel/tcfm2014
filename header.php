@@ -70,8 +70,7 @@
 
 </head>
 
-<?php $class = pxls_get_background_color(); ?>
-<body <?php body_class( $class ); ?>> 
+<body <?php body_class(); ?>> 
 	
 		<header>
 			<div class="container">

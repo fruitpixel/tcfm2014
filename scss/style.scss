@@ -8,6 +8,7 @@
 
 $tcfm-color-lightblue: #cedae7;
 $tcfm-color-darkblue: #233588;
+$tcfm-color-darkblue-bg: #235388;
 $tcfm-color-mediumblue: #22b0f9;
 $tcfm-color-red: #e41b13;
 
@@ -101,12 +102,21 @@ h2 {
 		font-weight: 300;
 		padding: 0.5em 0 0.8em;
 	}
+	.home-section & {
+		color: #fff;
+		font-size: 26px;
+		padding: 0% 10%;
+	}
 }
 h3 {
 	.post-content & {
 		color: $tcfm-color-darkblue;
 		font-size: 18px;
 		padding: 0.5em 0 0.8em;
+	}
+	.home-section & {
+		color: $tcfm-color-darkblue-bg;
+		font-size: 18px;
 	}
 }
 
@@ -121,6 +131,18 @@ p {
 		font-size: 13px;
 		font-weight: 300;
 		margin: 15px 0;
+	}
+	.home-section & {
+		font-size: 13px;
+	}
+	.section-3 & {
+		color: $tcfm-color-darkblue-bg;
+	}
+	.home-services & {
+		color: $tcfm-color-darkblue-bg;
+		font-size: 13px;
+		margin: 10px;
+  		padding: 0 10%;
 	}
 }
 
@@ -209,9 +231,10 @@ blockquote, blockquote p {
 	margin-left: auto;
 	max-width: 1280px;
 	/*position: relative;*/
-	&.has-button {
-		padding-bottom: 45px;
-	}
+}
+
+.has-button {
+	padding-bottom: 45px;
 }
 
 .button-container {
@@ -221,6 +244,10 @@ blockquote, blockquote p {
 	.csr-child &,
 	.accreditation & {
 		right: 0;
+	}
+	.home-service & {
+		right: 0;
+		width: 100%;
 	}
 }
 
@@ -235,15 +262,20 @@ blockquote, blockquote p {
 	&.back-button {
 		background: url("../images/arrow-red-left-small.png") no-repeat scroll left center $tcfm-color-mediumblue;
 		padding: 0 13px 0 48px;	
-	}	
+	}
 	&:hover {
 		background-color: $tcfm-color-darkblue;
+	}
+
+	.home-service & {
+		background: url("../images/arrow-darkblue-right.png") no-repeat scroll right center $tcfm-color-mediumblue;
+		text-transform: uppercase;
 	}
 }
 
 header {
 	margin-top: 50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 
 }
 
@@ -379,7 +411,7 @@ header {
 
 .metaslider {
 	.home & {
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 	.flexslider {
 		margin: 0 !important;
@@ -477,7 +509,56 @@ header {
 }
 
 
+.home-section {
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+	&.section-1 {
+		background: url("../images/section-1-bg.png") no-repeat scroll bottom center #fff;
+		color: #fff;
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+	&.section-2 {
+		background: #fff;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	&.section-3 {
+		background: url("../images/section-3-bg.png") no-repeat scroll bottom center #fff;
+		padding-top: 25px;
+		padding-bottom: 50px;
+		img {
+			max-width: 147px;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+	}
+}
 
+.home-services {
+	background: #fff;
+	padding-top: 20px;
+	padding-right: 10%;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	z-index:99;
+	img {
+		max-width: 147px;
+	}
+	.columns {
+		border-left: 1px solid $tcfm-color-darkblue-bg;
+		&:first-child {
+			border-left: 0;
+		}
+	}
+	.home-service {
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+
+}
 
 
 .home-news {
@@ -491,9 +572,100 @@ header {
 }
 
 
+#home-news-container {
+	
+	z-index: 999;
+	.news-items {
+		padding-top: 25px;		
+		img {
+			&.vacancies-bg {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+
+	.latest-vacancies {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		position: relative;
+		.button-container {
+			right: 0;
+		}
+	}
+		
+}
+
+.news-item {
+	position: relative;
+	.news-item-headline {
+		background: #051c35;
+		color: #fff;
+		display: block;
+  		display: -webkit-box;
+		font-size: 18px;
+		font-weight: 300;
+		height: 52px;
+		line-height: 22px;
+		margin: 0;
+		overflow: hidden;
+		padding: 5px 12px;
+		text-overflow: ellipsis;
+		-webkit-line-clamp: 2;
+  		-webkit-box-orient: vertical;
+	}
+	.content {
+		background: #fff;
+		padding: 20px 20px 50px;
+		p {
+			font-size: 13px;
+			margin: 0;
+		}
+	}
+	.button-container {
+		right: 0;
+	}
+
+	#home-news-container & {
+		background: #fff;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+}
+.home-news-title {
+	background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 53px;
+	min-height: 53px;
+	padding-left: 65px;
+}
+.latest-tweets {
+	#home-news-container & {
+		background: url("../images/home-twitter.png") no-repeat scroll 17px 20px #fff;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 20px;
+		padding-left: 65px;
+		.tweetli p {
+			color: #333;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 1.2;
+			margin: 0;
+		}
+	}
+
+}
+
+
+
+
 #home-testimonials-container {
 	
-
+	z-index: 999;
 	.testimonials {
 		padding-top: 25px;		
 		img {
@@ -828,6 +1000,11 @@ footer {
 	margin-top: 30px;
 	padding-top: 90px;
 	padding-bottom: 60px;
+	
+	.home & {
+		/*background: url("../images/angle-bg-3.png") no-repeat scroll center top transparent;*/
+		margin-top: 0;
+	}
 
 	.single-services_cpt &,
 	.single-post &,

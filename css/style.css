@@ -8787,11 +8787,18 @@ h2 {
     font-size: 28px;
     font-weight: 300;
     padding: 0.5em 0 0.8em; }
+  .home-section h2 {
+    color: #fff;
+    font-size: 26px;
+    padding: 0% 10%; }
 
 .post-content h3 {
   color: #233588;
   font-size: 18px;
   padding: 0.5em 0 0.8em; }
+.home-section h3 {
+  color: #235388;
+  font-size: 18px; }
 
 .quote-container p {
   color: #fff;
@@ -8802,6 +8809,15 @@ h2 {
   font-size: 13px;
   font-weight: 300;
   margin: 15px 0; }
+.home-section p {
+  font-size: 13px; }
+.section-3 p {
+  color: #235388; }
+.home-services p {
+  color: #235388;
+  font-size: 13px;
+  margin: 10px;
+  padding: 0 10%; }
 
 a {
   color: #22b0f9; }
@@ -8862,8 +8878,9 @@ blockquote, blockquote p {
   margin-left: auto;
   max-width: 1280px;
   /*position: relative;*/ }
-  .container.has-button {
-    padding-bottom: 45px; }
+
+.has-button {
+  padding-bottom: 45px; }
 
 .button-container {
   position: absolute;
@@ -8871,6 +8888,9 @@ blockquote, blockquote p {
   bottom: 0; }
   .csr-child .button-container, .accreditation .button-container {
     right: 0; }
+  .home-service .button-container {
+    right: 0;
+    width: 100%; }
 
 .button {
   background: url("../images/arrow-red-right-small.png") no-repeat scroll right center #22b0f9;
@@ -8885,10 +8905,13 @@ blockquote, blockquote p {
     padding: 0 13px 0 48px; }
   .button:hover {
     background-color: #233588; }
+  .home-service .button {
+    background: url("../images/arrow-darkblue-right.png") no-repeat scroll right center #22b0f9;
+    text-transform: uppercase; }
 
 header {
   margin-top: 50px;
-  margin-bottom: 40px; }
+  margin-bottom: 25px; }
 
 .phone-container p {
   color: #233588;
@@ -8984,7 +9007,7 @@ header .logo {
   top: 18px; }
 
 .home .metaslider {
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 .metaslider .flexslider {
   margin: 0 !important;
   position: relative; }
@@ -9053,23 +9076,130 @@ header .logo {
   .metaslider .flexslider ol.flex-control-nav {
     display: none; }
 
+.home-section {
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center; }
+  .home-section.section-1 {
+    background: url("../images/section-1-bg.png") no-repeat scroll bottom center #fff;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 50px; }
+  .home-section.section-2 {
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .home-section.section-3 {
+    background: url("../images/section-3-bg.png") no-repeat scroll bottom center #fff;
+    padding-top: 25px;
+    padding-bottom: 50px; }
+    .home-section.section-3 img {
+      max-width: 147px;
+      padding-bottom: 20px;
+      text-align: center; }
+
+.home-services {
+  background: #fff;
+  padding-top: 20px;
+  padding-right: 10%;
+  padding-bottom: 30px;
+  padding-left: 10%;
+  z-index: 99; }
+  .home-services img {
+    max-width: 147px; }
+  .home-services .columns {
+    border-left: 1px solid #235388; }
+    .home-services .columns:first-child {
+      border-left: 0; }
+  .home-services .home-service {
+    margin-top: 20px;
+    text-align: center; }
+
 .home-news .attachment-news-item-thumb {
   margin-bottom: 10px; }
 .home-news p {
   font-size: 13px;
   font-weight: 300; }
 
-#home-testimonials-container .testimonials {
-  padding-top: 25px; }
-  #home-testimonials-container .testimonials img.vacancies-bg {
-    height: 100%;
-    width: 100%; }
-#home-testimonials-container .latest-vacancies {
+#home-news-container {
+  z-index: 999; }
+  #home-news-container .news-items {
+    padding-top: 25px; }
+    #home-news-container .news-items img.vacancies-bg {
+      height: 100%;
+      width: 100%; }
+  #home-news-container .latest-vacancies {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative; }
+    #home-news-container .latest-vacancies .button-container {
+      right: 0; }
+
+.news-item {
+  position: relative; }
+  .news-item .news-item-headline {
+    background: #051c35;
+    color: #fff;
+    display: block;
+    display: -webkit-box;
+    font-size: 18px;
+    font-weight: 300;
+    height: 52px;
+    line-height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 12px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
+  .news-item .content {
+    background: #fff;
+    padding: 20px 20px 50px; }
+    .news-item .content p {
+      font-size: 13px;
+      margin: 0; }
+  .news-item .button-container {
+    right: 0; }
+  #home-news-container .news-item {
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+.home-news-title {
+  background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 53px;
+  min-height: 53px;
+  padding-left: 65px; }
+
+#home-news-container .latest-tweets {
+  background: url("../images/home-twitter.png") no-repeat scroll 17px 20px #fff;
   margin-top: 20px;
   margin-bottom: 20px;
-  position: relative; }
-  #home-testimonials-container .latest-vacancies .button-container {
-    right: 0; }
+  padding: 20px;
+  padding-left: 65px; }
+  #home-news-container .latest-tweets .tweetli p {
+    color: #333;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0; }
+
+#home-testimonials-container {
+  z-index: 999; }
+  #home-testimonials-container .testimonials {
+    padding-top: 25px; }
+    #home-testimonials-container .testimonials img.vacancies-bg {
+      height: 100%;
+      width: 100%; }
+  #home-testimonials-container .latest-vacancies {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative; }
+    #home-testimonials-container .latest-vacancies .button-container {
+      right: 0; }
 
 .testimonial {
   padding-top: 22px;
@@ -9304,6 +9434,9 @@ footer {
   margin-top: 30px;
   padding-top: 90px;
   padding-bottom: 60px; }
+  .home .page-angled-bg {
+    /*background: url("../images/angle-bg-3.png") no-repeat scroll center top transparent;*/
+    margin-top: 0; }
   .single-services_cpt .page-angled-bg, .single-post .page-angled-bg, .single-case_study .page-angled-bg, .single-staff_profile .page-angled-bg, .single-testimonials_cpt .page-angled-bg, .page-template-tpl-contact-us-php .page-angled-bg, .page-template-tpl-csr-php .page-angled-bg, .page-template-default:not(.home) .page-angled-bg {
     background: url("../images/angle-bg-2.png") no-repeat scroll center top #e5e5e5;
     background-size: contain;
@@ -9715,6 +9848,8 @@ footer {
       -webkit-transition: none;
       transition: none;
       z-index: 1; }
+  .home-services .columns {
+    border-left: 0; }
   .page-template-tpl-csr-php ol li {
     float: none;
     height: auto;

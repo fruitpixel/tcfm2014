@@ -14,6 +14,8 @@ $includes = array(
 	'theme/options.php',	// theme options
 	'theme/menus.php',		// register the theme menu areas
 	'theme/sidebars.php',	// register the theme sidebars
+	'theme/functions.php',
+	'theme/custom-meta-boxes.php'	// add custom meta boxes
 );
 
 // Allow child themes/plugins to add widgets to be loaded.
@@ -205,32 +207,7 @@ add_filter('metaslider_image_flex_slider_markup', 'metaslider_htmloutput', 10, 3
 
 
 
-function pxls_get_company_facebook() {
-	global $PXLS_Options;
-	$companyfacebook = $PXLS_Options->get( 'pxls_company_facebook' );
-    return $companyfacebook;
-}
 
-
-function pxls_get_company_linkedin() {
-	global $PXLS_Options;
-	$companylinkedin = $PXLS_Options->get( 'pxls_company_linkedin' );
-    return $companylinkedin;
-}
-
-
-function pxls_get_company_twitter() {
-	global $PXLS_Options;
-	$companylinkedin = $PXLS_Options->get( 'pxls_company_twitter' );
-    return $companylinkedin;
-}
-
-
-function pxls_get_company_youtube() {
-	global $PXLS_Options;
-	$companylinkedin = $PXLS_Options->get( 'pxls_company_youtube' );
-    return $companylinkedin;
-}
 
 
 
