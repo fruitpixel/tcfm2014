@@ -36,7 +36,12 @@
 
 	.home-services {
 		.columns {
+			border-top: 1px solid $tcfm-color-darkblue-bg;
 			border-left: 0;
+			margin-bottom: 20px;
+			&:first-child {
+				border: 0;
+			}
 		}
 	}
 
@@ -68,6 +73,12 @@
 			width: 100%;
 		}
 	}
+	
+	#bottom-news-container .news-item,
+	#bottom-news-container .latest-tweets {
+		margin-bottom: 0;
+	}
+	
 }
 
 
@@ -92,6 +103,11 @@
 		}		
 	}
 
+	#bottom-news-container .news-item,
+	#bottom-news-container .latest-tweets {
+		margin-bottom: 0;
+	}
+
 }
 
 
@@ -101,6 +117,11 @@
 @media #{$large-up} { 
 	#topnav-container .top-bar {
 		  margin-top: 38px;
+	}
+	.news-item {
+		.news-item-headline {
+			height: 52px;
+		}
 	}
 }
 @media #{$large-only} { 

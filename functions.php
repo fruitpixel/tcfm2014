@@ -147,9 +147,9 @@ if ( ! function_exists( 'pxls_enqueue_js' ) ) {
 	 */
 	function pxls_enqueue_js() {
 
-		wp_deregister_script( 'jquery' );
+		//wp_deregister_script( 'jquery' );
 
-		wp_register_script( 'jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, '1.11.1', true );
+		//wp_register_script( 'jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, '1.11.1', false );
 		wp_register_script( 'fastclick', get_template_directory_uri() . '/js/vendor/min/fastclick.min.js', array( 'jquery' ), false, true );
 		wp_register_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', array( 'fastclick' ), false, true );
 		wp_register_script( 'equalizer', get_stylesheet_directory_uri() . '/js/foundation/min/foundation.equalizer.min.js', array( 'foundation' ), false, true );

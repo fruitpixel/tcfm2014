@@ -1,0 +1,142 @@
+.home-section {
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+	&.section-1 {
+		background: url("../images/section-1-bg.png") no-repeat scroll bottom center #fff;
+		color: #fff;
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+	&.section-2 {
+		background: #fff;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	&.section-3 {
+		background: url("../images/section-3-bg.png") no-repeat scroll bottom center #fff;
+		padding-top: 25px;
+		padding-bottom: 50px;
+		img {
+			max-width: 147px;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+	}
+}
+
+.home-services {
+	background: #fff;
+	padding-top: 20px;
+	padding-right: 10%;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	z-index:99;
+	img {
+		max-width: 147px;
+	}
+	.columns {
+		border-left: 1px solid $tcfm-color-darkblue-bg;
+		&:first-child {
+			border-left: 0;
+		}
+	}
+	.home-service {
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+
+}
+
+
+.home-news {
+	.attachment-news-item-thumb {
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 13px;
+		font-weight: 300;
+	}
+}
+
+
+
+
+
+
+
+#home-testimonials-container {
+	
+	z-index: 999;
+	.testimonials {
+		padding-top: 25px;		
+		img {
+			&.vacancies-bg {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+
+	.latest-vacancies {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		position: relative;
+		.button-container {
+			right: 0;
+		}
+	}
+		
+}
+
+.testimonial {
+	padding-top: 22px;
+	position: relative;
+	.client-name {
+		background: #051c35;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 300;
+		height: 44px;
+		line-height: 44px;
+		margin: 0;
+		overflow: hidden;
+		padding: 0 12px;
+		position: absolute;
+		text-overflow: ellipsis;
+		top: 0;
+		left: 0;
+	}
+	.content {
+		background: #fff;
+		padding: 35px 20px 51px;
+		p {
+			font-size: 13px;
+			margin: 0;
+		}
+	}
+	.button-container {
+		right: 0;
+	}
+
+	#home-testimonials-container & {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+}
+
+.testimonials-title {
+	background: url("../images/speechbubble.png") no-repeat scroll left center transparent;
+	color: #fff;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 53px;
+	min-height: 53px;
+	padding-left: 65px;
+	.single-services_cpt & {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+}

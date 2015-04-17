@@ -1,0 +1,198 @@
+
+.single-service {
+	.metaslider {
+		.caption-wrap {
+			display: none;
+		}
+	}
+
+	.form-container {
+		background: $tcfm-color-deep-purple;
+		margin-top: -33px;
+		margin-bottom: 30px;
+	}
+	.more-info-container {
+		margin: 0;
+		padding-top: 60px;
+		.gform_wrapper {
+			h3.gform_title {
+				color: #f1eded;
+				font-family: 'Raleway', sans-serif;
+				font-size: 31px;
+				font-weight: 300;
+				text-align: center;
+			}
+			span.gform_description {
+				color: #f1eded;
+				display: block;
+				font-size: 15px;
+				text-align: center;
+			}
+			.top_label {
+				.gfield_label {
+					color: #f1eded;
+				}
+			}
+			.gfield_required {
+				color: red;
+			}
+			input.gform_button {
+				background: $tcfm-color-purple;
+				color: white;
+				font-size: 28px;
+				font-weight: 300;
+				padding: 10px 50px;
+				position: absolute;
+				bottom: -25px;
+				left: 40%;
+			}
+		}
+	}
+			
+}
+
+.single-service-logo-container {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	img {
+		margin-top:165px;
+		width: 147px;
+	}
+}
+.single-service-logo-slide-container {
+	background: white;
+}
+
+
+.single-service-section-1 {
+	background: url("../images/section-bg-purple.png") no-repeat scroll bottom center white;
+	color: white;
+	padding-top: 20px;
+	padding-right: 10%;
+	padding-bottom: 50px;
+	padding-left: 10%;
+	text-align: center;
+	h2 {
+		color: white;
+		font-size: 26px;
+	}
+	p {
+		color: white;
+		font-size: 13px;
+	}
+}
+.single-service-section-2 {
+	background: white;
+	padding-top: 40px;
+	padding-right: 10%;
+	padding-bottom: 5px;
+	padding-left: 10%;
+	text-align: center;
+	p {			
+		color: #333;
+		font-size: 13px;
+	}
+}
+.single-service-sectors {
+	background: white;
+	padding-top: 10px;
+	padding-right: 10%;
+	padding-bottom: 20px;
+	padding-left: 10%;
+	text-align: center;
+	h2 {
+		color: $tcfm-color-purple;
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	h3 {
+		color: #333;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	img {
+		border: 3px solid $tcfm-color-purple;
+		border-radius: 10px;
+		padding: 25px;
+	}
+}
+
+.single-service-services-offered {
+	background: url("../images/section-bg-purple.png") no-repeat scroll bottom center $tcfm-color-deep-purple;
+	padding-top: 20px;
+	padding-right: 10%;
+	padding-bottom: 50px;
+	padding-left: 10%;
+	text-align: center;
+	h2 {
+		color: white;
+		font-size: 26px;
+		margin-bottom: 30px;
+	}
+}
+.single-service-service-offered {
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	padding: 25px;
+	position: relative;
+	h4 {
+		color: white;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p {
+		color: $tcfm-color-light-purple;
+		font-size: 13px;
+	}
+	&:before {
+		background: white;
+		border-radius: 50%;
+		color: $tcfm-color-purple;
+		content: " ";
+		font-size: 23px;
+		font-weight: bolder;
+		position: absolute;
+		top: -20px;
+		left: 43%;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+
+	}
+	&.service-1 {
+		&:before {
+			content: "1";
+		}
+	}
+	&.service-2 {
+		&:before {
+			content: "2";
+		}
+	}
+	&.service-3 {
+		&:before {
+			content: "3";
+		}
+	}
+	&.service-4 {
+		&:before {
+			content: "4";
+		}
+	}
+	&.service-5 {
+		&:before {
+			content: "5";
+		}
+	}
+	&.service-6 {
+		&:before {
+			content: "6";
+		}
+	}
+}
+
+
+
+
