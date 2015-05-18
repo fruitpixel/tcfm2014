@@ -281,4 +281,5 @@ function single_service_metaboxes( array $meta_boxes ) {
 
     return $meta_boxes; 
 }
-add_filter( 'cmb_meta_boxes', 'single_service_metaboxes' );
+//add_filter( 'cmb_meta_boxes', 'single_service_metaboxes' );
+
